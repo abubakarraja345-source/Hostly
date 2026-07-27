@@ -1,0 +1,1543 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth" data-theme="titanium">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hostly • Luxury STR Co-Hosting, Maintenance & Direct Booking Systems</title>
+    <meta name="description" content="Maximize rental revenue with 24/7 Virtual Ops, Property Maintenance Management, and a FREE Direct Booking Website to bypass Airbnb fees." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Entry Point -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#060B18] text-slate-100 font-sans antialiased selection:bg-[#D4AF37] selection:text-[#060B18]">
+
+    <!-- Navigation Header -->
+    <header id="main-header" class="sticky top-0 z-50 bg-[#060B18]/90 backdrop-blur-xl border-b border-[#D4AF37]/20 transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Hostly Brand Logo -->
+        <a id="brand-logo" href="#" class="flex items-center gap-3 group">
+          <div class="w-8 h-9 relative flex-shrink-0 transition-transform group-hover:scale-105">
+            <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+              <defs>
+                <linearGradient id="hostlyNavGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFF3C4"/>
+                  <stop offset="40%" stop-color="#E6C665"/>
+                  <stop offset="70%" stop-color="#D4AF37"/>
+                  <stop offset="100%" stop-color="#997519"/>
+                </linearGradient>
+              </defs>
+              <polygon points="10,20 22,25 22,175 10,180" fill="url(#hostlyNavGold)"/>
+              <polygon points="32,35 44,40 44,165 32,170" fill="url(#hostlyNavGold)"/>
+              <polygon points="54,50 66,55 66,155 54,160" fill="url(#hostlyNavGold)"/>
+              <polygon points="190,20 178,25 178,175 190,180" fill="url(#hostlyNavGold)"/>
+              <polygon points="168,35 156,40 156,165 168,170" fill="url(#hostlyNavGold)"/>
+              <polygon points="146,50 134,55 134,155 146,160" fill="url(#hostlyNavGold)"/>
+              <rect x="64" y="98" width="72" height="9" fill="url(#hostlyNavGold)" rx="1"/>
+              <polygon points="32,173 168,173 156,178 44,178" fill="url(#hostlyNavGold)"/>
+              <polygon points="44,181 156,181 144,185 56,185" fill="url(#hostlyNavGold)"/>
+              <polygon points="56,188 144,188 132,192 68,192" fill="url(#hostlyNavGold)"/>
+              <polygon points="68,195 132,195 120,198 80,198" fill="url(#hostlyNavGold)"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-bold font-serif tracking-[0.22em] gold-text-gradient uppercase leading-none">HOSTLY</span>
+          </div>
+        </a>
+
+        <!-- Minimal Navigation Links (Important Things Only) -->
+        <nav id="desktop-nav" class="hidden md:flex items-center gap-8 text-xs uppercase tracking-widest font-bold text-slate-300">
+          <a href="#services" class="hover:text-[#F3E096] transition-colors">Services</a>
+          <a href="#portfolio" class="hover:text-[#F3E096] transition-colors text-[#F3E096] flex items-center gap-1"><span>Portfolio</span><span class="px-1.5 py-0.5 bg-[#D4AF37]/20 rounded text-[10px] border border-[#D4AF37]/40 font-num">200+</span></a>
+          <a href="#revenue-calculator" class="hover:text-[#F3E096] transition-colors">Calculator</a>
+          <a href="#faq" class="hover:text-[#F3E096] transition-colors">FAQ</a>
+        </nav>
+
+        <!-- Header Theme Switcher & CTA Button -->
+        <div class="hidden md:flex items-center gap-4">
+          <!-- Single Button Theme Switcher -->
+          <button data-theme-toggle title="Toggle Light / Dark Theme" class="theme-switcher-container flex items-center gap-2 px-3.5 py-1.5 rounded-full shadow-inner hover:border-[#D4AF37]/60 transition-all cursor-pointer group">
+            <span class="theme-toggle-icon text-sm">🌌</span>
+            <span class="theme-toggle-label text-[11px] font-bold font-mono-num text-slate-200 group-hover:text-white transition-colors">Slate</span>
+            <span class="w-8 h-4 bg-slate-800 rounded-full relative inline-flex items-center px-0.5 border border-slate-600 transition-colors theme-switch-track ml-0.5">
+              <span class="w-3 h-3 bg-[#D4AF37] rounded-full transition-transform transform translate-x-0 theme-switch-thumb"></span>
+            </span>
+          </button>
+
+          <a href="#start-with-us" class="gold-btn px-6 py-2.5 rounded-lg text-xs tracking-wider uppercase font-bold">
+            Start With Us
+          </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- Mobile Navigation Dropdown -->
+      <div id="mobile-menu" class="hidden md:hidden bg-[#070E20] border-b border-[#D4AF37]/30 px-6 py-6 space-y-4 text-center">
+        <a href="#services" class="block text-sm font-semibold text-slate-200 hover:text-[#D4AF37]">Services</a>
+        <a href="#portfolio" class="block text-sm font-semibold text-[#F3E096] hover:text-[#D4AF37]">Portfolio (200+ Listings)</a>
+        <a href="#revenue-calculator" class="block text-sm font-semibold text-slate-200 hover:text-[#D4AF37]">Profit Calculator</a>
+        <a href="#faq" class="block text-sm font-semibold text-slate-200 hover:text-[#D4AF37]">FAQ</a>
+        <div class="pt-2 border-t border-slate-800/80 flex items-center justify-center">
+          <button data-theme-toggle class="flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#0D1628] border border-slate-700 hover:border-[#D4AF37] transition-all shadow-md cursor-pointer group">
+            <span class="text-[11px] text-slate-400 font-bold uppercase mr-1 font-mono-num">Theme:</span>
+            <span class="theme-toggle-icon text-base">🌌</span>
+            <span class="theme-toggle-label text-xs font-bold font-mono-num text-slate-200 group-hover:text-white transition-colors">Slate Dark</span>
+            <span class="w-8 h-4 bg-slate-800 rounded-full relative inline-flex items-center px-0.5 border border-slate-600 transition-colors theme-switch-track">
+              <span class="w-3 h-3 bg-[#D4AF37] rounded-full transition-transform transform translate-x-0 theme-switch-thumb"></span>
+            </span>
+          </button>
+        </div>
+        <div class="pt-2">
+          <a href="#start-with-us" class="gold-btn block w-full py-3 rounded-lg text-xs uppercase tracking-wider font-bold">
+            Start With Us
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative py-16 lg:py-24 gold-glow-ambient">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+        
+        <!-- Logo Emblem -->
+        <div class="w-16 h-18 sm:w-20 sm:h-22 mx-auto relative flex-shrink-0 animate-float">
+          <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-[0_10px_30px_rgba(212,175,55,0.35)]">
+            <defs>
+              <linearGradient id="hostlyHeroGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF3C4"/>
+                <stop offset="40%" stop-color="#E6C665"/>
+                <stop offset="70%" stop-color="#D4AF37"/>
+                <stop offset="100%" stop-color="#997519"/>
+              </linearGradient>
+            </defs>
+            <polygon points="10,20 22,25 22,175 10,180" fill="url(#hostlyHeroGold)"/>
+            <polygon points="32,35 44,40 44,165 32,170" fill="url(#hostlyHeroGold)"/>
+            <polygon points="54,50 66,55 66,155 54,160" fill="url(#hostlyHeroGold)"/>
+            <polygon points="190,20 178,25 178,175 190,180" fill="url(#hostlyHeroGold)"/>
+            <polygon points="168,35 156,40 156,165 168,170" fill="url(#hostlyHeroGold)"/>
+            <polygon points="146,50 134,55 134,155 146,160" fill="url(#hostlyHeroGold)"/>
+            <rect x="64" y="98" width="72" height="9" fill="url(#hostlyHeroGold)" rx="1"/>
+            <polygon points="32,173 168,173 156,178 44,178" fill="url(#hostlyHeroGold)"/>
+            <polygon points="44,181 156,181 144,185 56,185" fill="url(#hostlyHeroGold)"/>
+            <polygon points="56,188 144,188 132,192 68,192" fill="url(#hostlyHeroGold)"/>
+            <polygon points="68,195 132,195 120,198 80,198" fill="url(#hostlyHeroGold)"/>
+          </svg>
+        </div>
+
+        <!-- Highlight Offer Pill -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#0A142A]/90 border border-[#D4AF37]/40 rounded-full text-xs font-semibold text-[#F3E096] uppercase tracking-wider shadow-lg">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Includes FREE Custom Direct Booking Website & Funnel</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-serif text-white leading-tight tracking-tight">
+          Maximize Rental Revenue & <br class="hidden sm:inline"/>
+          Automate Operations with <span class="gold-text-gradient">Hostly</span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed font-light">
+          White-glove short-term rental co-hosting with <strong>24/7 guest support</strong>, <strong>full property maintenance management</strong>, and dynamic <strong>revenue yield optimization (+25% to +35%)</strong>. Plus, we build your free direct booking website to bypass Airbnb’s 15.5% fees.
+        </p>
+
+        <!-- Action CTA Buttons -->
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+          <a href="#start-with-us" class="gold-btn px-8 py-4 rounded-xl text-xs uppercase font-bold tracking-wider w-full text-center">
+            Start With Us
+          </a>
+          <a href="https://wa.me/15550192837?text=Hi%20Hostly%2C%20I%20want%20to%20learn%20about%20your%20co-hosting%20and%20free%20direct%20booking%20website." target="_blank" class="whatsapp-btn px-6 py-4 rounded-xl text-xs uppercase font-bold tracking-wider w-full text-center flex items-center justify-center gap-2">
+            <span>WhatsApp Quick Chat</span>
+          </a>
+        </div>
+
+        <!-- Key Metrics Banner -->
+        <div class="pt-10 grid grid-cols-2 md:grid-cols-4 gap-4 text-center max-w-4xl mx-auto">
+          <div class="p-5 rounded-2xl bg-[#0A142A]/80 border border-[#D4AF37]/30 backdrop-blur-xl shadow-xl hover:border-[#D4AF37]/60 transition-all">
+            <div class="text-3xl sm:text-4xl font-extrabold font-num text-[#F3E096] tracking-tight">+28%</div>
+            <div class="text-[11px] text-slate-300 font-semibold uppercase tracking-widest mt-1.5">Average Revenue Boost</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-[#0A142A]/80 border border-[#D4AF37]/30 backdrop-blur-xl shadow-xl hover:border-[#D4AF37]/60 transition-all">
+            <div class="text-3xl sm:text-4xl font-extrabold font-num text-emerald-400 tracking-tight">0% Fee</div>
+            <div class="text-[11px] text-slate-300 font-semibold uppercase tracking-widest mt-1.5">Free Direct Website</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-[#0A142A]/80 border border-[#D4AF37]/30 backdrop-blur-xl shadow-xl hover:border-[#D4AF37]/60 transition-all">
+            <div class="text-3xl sm:text-4xl font-extrabold font-num text-[#F3E096] tracking-tight">&lt; 30 Min</div>
+            <div class="text-[11px] text-slate-300 font-semibold uppercase tracking-widest mt-1.5">24/7 AI & Human Support</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-[#0A142A]/80 border border-[#D4AF37]/30 backdrop-blur-xl shadow-xl hover:border-[#D4AF37]/60 transition-all">
+            <div class="text-3xl sm:text-4xl font-extrabold font-num text-white tracking-tight">100%</div>
+            <div class="text-[11px] text-slate-300 font-semibold uppercase tracking-widest mt-1.5">Maintenance Handled</div>
+          </div>
+        </div>
+
+        <!-- Highlighted PMS Connection Banner in Hero -->
+        <div class="pt-6 max-w-4xl mx-auto">
+          <div class="p-4 sm:p-6 rounded-2xl bg-gradient-to-r from-[#0A142A] via-[#122350] to-[#0A142A] border-2 border-[#D4AF37]/80 shadow-[0_0_30px_rgba(212,175,55,0.25)] flex flex-col sm:flex-row items-center justify-between gap-4 text-left group">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#D4AF37]/20 border border-[#D4AF37] flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                🔌
+              </div>
+              <div>
+                <div class="flex items-center flex-wrap gap-2">
+                  <span class="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#F3E096]">We Connect Into Your PMS</span>
+                  <span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded text-[10px] font-bold uppercase font-num">Zero Setup Friction</span>
+                </div>
+                <div class="text-xs text-slate-200 mt-1">We connect directly into your existing software (<strong class="text-white">Hostaway, Guesty, Hospitable, OwnerRez, Track & Lodgify</strong>). Use your current calendar while we supercharge pricing, AI chat & direct bookings!</div>
+              </div>
+            </div>
+            <a href="#services" class="gold-btn-outline px-4 py-2.5 rounded-lg text-xs uppercase tracking-wider font-bold whitespace-nowrap flex-shrink-0">See Integration →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: DIRECT BOOKING & REVENUE ADVANTAGE -->
+    <section class="py-12 bg-[#070E20] border-y border-[#D4AF37]/20">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="gold-card p-8 sm:p-10 border-[#D4AF37]/30 bg-gradient-to-r from-[#070E20] via-[#0A152E] to-[#070E20] flex flex-col md:flex-row items-center justify-between gap-8">
+          
+          <div class="space-y-3 md:max-w-2xl">
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Stop Paying Heavy Platform Commissions</span>
+            <h2 class="text-2xl sm:text-3xl font-bold font-serif text-white">
+              Airbnb is Taking Up To <span class="gold-text-gradient">15.5%+ Of Your Profit</span>
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              OTAs own the guest relationship while charging thousands in host fees every year. Hostly builds your <strong>custom Direct Booking Portal for FREE</strong>, allowing you to lock in repeat guests, collect direct credit card payments, and keep 100% of your earnings.
+            </p>
+          </div>
+
+          <div class="flex-shrink-0 text-center w-full md:w-auto">
+            <a href="#start-with-us" class="gold-btn px-8 py-4 rounded-xl text-xs uppercase font-bold tracking-wider inline-block w-full sm:w-auto">
+              Get Your Free Website
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: INTERACTIVE REVENUE & SAVINGS CALCULATOR -->
+    <section id="revenue-calculator" class="py-20 bg-[#060B18] border-b border-[#D4AF37]/20 relative">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest">Interactive Profit Estimator</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white">
+            Calculate Your <span class="gold-text-gradient">Hostly Advantage</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300">
+            See how much extra profit you unlock by bypassing Airbnb commissions with our free direct booking website and boosting nightly rates with algorithmic yield optimization.
+          </p>
+        </div>
+
+        <div class="gold-card p-6 sm:p-10 border-[#D4AF37]/30 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Minimalist Interactive Sliders -->
+          <div class="lg:col-span-6 space-y-7">
+            <div class="border-b border-slate-800/80 pb-3 flex items-center justify-between">
+              <h3 class="text-base font-bold font-serif text-white tracking-wide">1. Portfolio Parameters</h3>
+              <span class="text-[11px] font-mono-num text-[#D4AF37] uppercase tracking-wider">Step 01</span>
+            </div>
+
+            <!-- Slider 1: Monthly Revenue per Property -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between text-xs font-semibold">
+                <label for="calc-revenue" class="text-slate-300">Monthly Revenue / Property</label>
+                <span id="display-revenue" class="text-sm font-bold text-[#F3E096] font-num bg-[#0A142A] px-2.5 py-1 rounded border border-[#D4AF37]/30">$6,000</span>
+              </div>
+              <input type="range" id="calc-revenue" min="1000" max="30000" step="500" value="6000" class="gold-slider cursor-pointer">
+            </div>
+
+            <!-- Slider 2: Number of Properties -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between text-xs font-semibold">
+                <label for="calc-properties" class="text-slate-300">Property Count</label>
+                <span id="display-properties" class="text-sm font-bold text-[#F3E096] font-num bg-[#0A142A] px-2.5 py-1 rounded border border-[#D4AF37]/30">3 Properties</span>
+              </div>
+              <input type="range" id="calc-properties" min="1" max="30" step="1" value="3" class="gold-slider cursor-pointer">
+            </div>
+
+            <div class="border-b border-slate-800/80 pb-3 pt-4 flex items-center justify-between">
+              <h3 class="text-base font-bold font-serif text-white tracking-wide">2. Hostly Optimization Shift</h3>
+              <span class="text-[11px] font-mono-num text-emerald-400 uppercase tracking-wider">Step 02</span>
+            </div>
+
+            <!-- Slider 3: Direct Booking Shift % -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between text-xs font-semibold">
+                <label for="calc-direct-rate" class="text-slate-300">Direct Booking Shift <span class="text-[10px] text-slate-400 font-normal">(0% Airbnb Fee)</span></label>
+                <span id="display-direct-rate" class="text-sm font-bold text-emerald-400 font-num bg-emerald-950/40 px-2.5 py-1 rounded border border-emerald-500/30">50% Shift</span>
+              </div>
+              <input type="range" id="calc-direct-rate" min="10" max="90" step="5" value="50" class="gold-slider cursor-pointer">
+            </div>
+
+            <!-- Slider 4: Dynamic Yield Boost % -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between text-xs font-semibold">
+                <label for="calc-yield-boost" class="text-slate-300">Dynamic Pricing Boost <span class="text-[10px] text-slate-400 font-normal">(Avg +28%)</span></label>
+                <span id="display-yield-boost" class="text-sm font-bold text-[#F3E096] font-num bg-[#0A142A] px-2.5 py-1 rounded border border-[#D4AF37]/30">+28% ADR Boost</span>
+              </div>
+              <input type="range" id="calc-yield-boost" min="10" max="45" step="1" value="28" class="gold-slider cursor-pointer">
+            </div>
+
+          </div>
+
+          <!-- Right Column: Minimalist Architectural Ledger -->
+          <div class="lg:col-span-6 bg-[#0A142A]/90 border border-[#D4AF37]/25 rounded-2xl p-6 sm:p-8 space-y-6">
+            <div class="space-y-1">
+              <span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 font-mono-num">Financial Projection</span>
+              <h4 class="text-xl font-bold font-serif text-white">Annual Profit Ledger</h4>
+            </div>
+
+            <!-- Clean Minimal Ledger Lines -->
+            <div class="space-y-4 pt-2 border-t border-slate-800/80 text-xs">
+              
+              <!-- Row 1: Baseline -->
+              <div class="flex items-center justify-between py-2 border-b border-slate-800/50">
+                <span class="text-slate-400 font-medium">Current Annual Revenue Baseline</span>
+                <span id="result-baseline" class="font-bold text-slate-300 font-num text-sm">$216,000 / yr</span>
+              </div>
+
+              <!-- Row 2: Commission Saved -->
+              <div class="flex items-center justify-between py-2 border-b border-slate-800/50">
+                <div>
+                  <span class="text-emerald-300 font-semibold">Airbnb Commission Kept (15.5%)</span>
+                  <div class="text-[10px] text-slate-400">Direct booking website savings</div>
+                </div>
+                <span id="result-saved" class="font-bold text-emerald-400 font-num text-sm">+$16,740 / yr</span>
+              </div>
+
+              <!-- Row 3: Yield Boost -->
+              <div class="flex items-center justify-between py-2 border-b border-slate-800/50">
+                <div>
+                  <span class="text-[#F3E096] font-semibold">Dynamic Pricing Yield Gain</span>
+                  <div class="text-[10px] text-slate-400">Algorithmic rate optimization</div>
+                </div>
+                <span id="result-boost" class="font-bold text-[#F3E096] font-num text-sm">+$60,480 / yr</span>
+              </div>
+
+            </div>
+
+            <!-- Minimalist Hero Result Box -->
+            <div class="p-6 rounded-xl bg-gradient-to-br from-[#060B18] to-[#0D1832] border border-[#D4AF37]/40 text-center space-y-2.5">
+              <div class="text-[10px] font-bold uppercase tracking-widest text-slate-300">Net Additional Profit Transformation</div>
+              <div id="result-total-annual" class="text-3xl sm:text-4xl font-extrabold font-num gold-text-gradient tracking-tight">
+                +$77,220 / Year
+              </div>
+              <div class="text-xs text-slate-300 pt-2 border-t border-slate-800/80 flex items-center justify-center gap-2">
+                <span class="text-slate-400">Monthly Cashflow Boost:</span>
+                <span id="result-total-monthly" class="font-bold font-num text-emerald-400 bg-emerald-950/50 px-2.5 py-0.5 rounded border border-emerald-500/30">+$6,435 / Month</span>
+              </div>
+            </div>
+
+            <!-- Action CTA -->
+            <div class="pt-1">
+              <a href="#start-with-us" class="gold-btn w-full py-3.5 rounded-xl text-xs uppercase font-bold tracking-wider block text-center">
+                Lock In Your Extra Profit • Work With Us
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 1: SERVICES (Vastly Elevated CSS & Cards) -->
+    <section id="services" class="py-20 bg-[#060B18] relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest">Our Expertise</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white">Full-Spectrum Co-Hosting Services</h2>
+          <p class="text-xs sm:text-sm text-slate-300">
+            Tailored operations engineered to eliminate host workload, safeguard properties, and maximize monthly rental yield while linking directly to your existing software.
+          </p>
+        </div>
+
+        <!-- THE PMS WEBSITE TRAP VS HOSTLY CUSTOM WEBSITE ADVANTAGE -->
+        <div class="gold-card p-6 sm:p-10 border-2 border-[#D4AF37]/60 bg-gradient-to-br from-[#070E20] via-[#0C1733] to-[#070E20] relative overflow-hidden rounded-3xl shadow-2xl">
+          <div class="text-center max-w-2xl mx-auto space-y-2 mb-8">
+            <span class="px-3 py-1 bg-[#D4AF37]/20 text-[#F3E096] rounded-full text-[11px] font-bold uppercase tracking-widest">Why Our Free Website Wins</span>
+            <h3 class="text-2xl sm:text-3xl font-bold font-serif text-white">The PMS Website Trap <span class="text-slate-400 font-sans font-light">vs.</span> The Hostly Advantage</h3>
+            <p class="text-xs text-slate-300 italic">"Yes — you probably do have a direct booking website from your PMS already. But let's be honest..."</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+            <!-- Left: The PMS Trap -->
+            <div class="p-6 rounded-2xl bg-rose-950/20 border border-rose-500/30 flex flex-col justify-between space-y-4">
+              <div class="space-y-3">
+                <div class="flex items-center gap-2 text-rose-400 font-bold text-sm uppercase tracking-wider">
+                  <span>❌</span><span>The Typical PMS "Free Website"</span>
+                </div>
+                <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+                  <li class="flex items-start gap-2"><span class="text-rose-400 font-bold">✕</span> <span><strong>It looks generic</strong> with rigid cookie-cutter layouts that fail to showcase luxury properties.</span></li>
+                  <li class="flex items-start gap-2"><span class="text-rose-400 font-bold">✕</span> <span><strong>It feels low-trust</strong> with clunky checkout flows and slow page load speeds.</span></li>
+                  <li class="flex items-start gap-2"><span class="text-rose-400 font-bold">✕</span> <span><strong>You wouldn't book on it yourself</strong> when comparing it against Airbnb's polished UI.</span></li>
+                  <li class="flex items-start gap-2"><span class="text-rose-400 font-bold">✕</span> <span><strong>Guests definitely won't</strong> — resulting in near-zero direct booking conversions.</span></li>
+                </ul>
+              </div>
+              <div class="pt-3 border-t border-rose-500/20 text-[11px] text-rose-300/80 italic text-center">Result: Hosts remain 100% dependent on OTA platforms.</div>
+            </div>
+
+            <!-- Right: The Hostly Custom Advantage -->
+            <div class="p-6 rounded-2xl bg-gradient-to-br from-[#0A142A] to-[#14285A] border-2 border-[#D4AF37] flex flex-col justify-between space-y-4 shadow-lg">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2 text-[#F3E096] font-bold text-sm uppercase tracking-wider">
+                    <span>👑</span><span>The Hostly Custom Booking Portal</span>
+                  </div>
+                  <span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 rounded text-[10px] font-bold uppercase font-num">100% Free</span>
+                </div>
+                <ul class="space-y-2.5 text-xs text-slate-200 font-medium">
+                  <li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span> <span><strong>Custom-Branded Luxury UI</strong> tailored to your property's unique aesthetic & photography.</span></li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span> <span><strong>High-Trust Stripe Checkout</strong> with instant confirmation, upsell funnels, and guest reviews.</span></li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span> <span><strong>We Connect Into Your PMS</strong> so calendars & pricing sync automatically across all channels!</span></li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-400 font-bold">✓</span> <span><strong>Bypass 15.5% Airbnb Fees</strong> and pass savings to guests while earning higher net margins.</span></li>
+                </ul>
+              </div>
+              <div class="pt-3 border-t border-[#D4AF37]/30 text-[11px] text-[#F3E096] font-semibold text-center flex items-center justify-center gap-1.5">
+                <span>⚡ Built, Hosted & Managed For You at Zero Cost</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8-CARD COMPREHENSIVE FEATURES GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          
+          <!-- Feature 1: Property Maintenance Management -->
+          <div class="gold-card p-6 sm:p-7 flex flex-col justify-between space-y-5 group">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="w-11 h-11 rounded-xl bg-[#0A142A] border border-[#D4AF37]/40 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                  🛠️
+                </div>
+                <span class="text-lg font-bold font-mono-num text-[#D4AF37]/40 group-hover:text-[#D4AF37] transition-colors">01</span>
+              </div>
+              <h3 class="text-lg font-bold font-serif text-white">Property Maintenance & Operations</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Complete proactive maintenance. We coordinate cleaner dispatch, pre-guest checklists, emergency repairs, and HVAC/plumbing routine upkeep.
+              </p>
+            </div>
+            <ul class="space-y-2 text-[11px] text-slate-300 pt-3 border-t border-slate-800/80">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Cleaner Quality Control Inspection</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> <span class="font-num">24/7</span> Emergency Tech Dispatch</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Post-Stay Damage Reports</li>
+            </ul>
+          </div>
+
+          <!-- Feature 2: Revenue Increase & Yield Optimization -->
+          <div class="gold-card p-6 sm:p-7 flex flex-col justify-between space-y-5 service-card-highlight group">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="w-11 h-11 rounded-xl bg-[#D4AF37]/25 border border-[#D4AF37]/60 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                  📈
+                </div>
+                <span class="text-lg font-bold font-mono-num text-[#D4AF37]">02</span>
+              </div>
+              <div class="flex items-center justify-between flex-wrap gap-1">
+                <h3 class="text-lg font-bold font-serif text-white">Dynamic Pricing & Yield Boost</h3>
+                <span class="px-2 py-0.5 bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-[10px] font-bold rounded-full font-num">
+                  +25% to +35% Yield
+                </span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Algorithmic rate tuning (PriceLabs/Wheelhouse) matched with human market compression tracking to capture local event spikes & maximize ADR.
+              </p>
+            </div>
+            <ul class="space-y-2 text-[11px] text-slate-300 pt-3 border-t border-slate-800/80">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Daily Rate & Min-Stay Tuning</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Local Event Surge Engine</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Real-Time P&L Dashboard Sync</li>
+            </ul>
+          </div>
+
+          <!-- Feature 3: FREE Direct Booking Website -->
+          <div class="gold-card p-6 sm:p-7 flex flex-col justify-between space-y-5 group">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="w-11 h-11 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                  🌐
+                </div>
+                <span class="text-lg font-bold font-mono-num text-[#D4AF37]/40 group-hover:text-[#D4AF37] transition-colors">03</span>
+              </div>
+              <div class="flex items-center justify-between flex-wrap gap-1">
+                <h3 class="text-lg font-bold font-serif text-white">FREE Direct Booking Website</h3>
+                <span class="px-2 py-0.5 bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#F3E096] text-[10px] font-bold rounded-full font-num">
+                  100% Free
+                </span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                We build a custom-branded portal at zero cost. Bypass Airbnb's <span class="font-num">15.5%</span> commission, earn higher margins, and build repeat guest loyalty.
+              </p>
+            </div>
+            <ul class="space-y-2 text-[11px] text-slate-300 pt-3 border-t border-slate-800/80">
+              <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Custom Domain & Luxury Design</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Stripe Payment Processing</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <span class="font-num">0%</span> Host Commission Fees</li>
+            </ul>
+          </div>
+
+          <!-- Feature 4: 24/7 Guest Communication (AI Chat Bots) -->
+          <div class="gold-card p-6 sm:p-7 flex flex-col justify-between space-y-5 group border-[#D4AF37]/50 bg-gradient-to-b from-[#0A142A] to-[#070E20]">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="w-11 h-11 rounded-xl bg-amber-500/20 border border-amber-500/50 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform animate-pulse">
+                  🤖
+                </div>
+                <span class="text-lg font-bold font-mono-num text-[#D4AF37]">04</span>
+              </div>
+              <div class="flex items-center justify-between flex-wrap gap-1">
+                <h3 class="text-lg font-bold font-serif text-white">24/7 AI Chatbots & Live Concierge</h3>
+                <span class="px-2 py-0.5 bg-amber-500/20 border border-amber-500/40 text-amber-300 text-[10px] font-bold rounded-full font-num">
+                  &lt;30 Min Res
+                </span>
+              </div>
+              <p class="text-xs text-slate-200 leading-relaxed">
+                Advanced AI chatbots answer 85% of guest inquiries instantly (<strong class="text-[#F3E096]">&lt;3 minutes</strong>), backed by our human desk guaranteeing complex resolutions in <strong class="text-[#F3E096]">under 30 minutes</strong>!
+              </p>
+            </div>
+            <ul class="space-y-2 text-[11px] text-slate-300 pt-3 border-t border-slate-800/80">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Instant AI Chatbot Inquiries 24/7</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Guaranteed &lt;30 Min Resolution Time</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Multilingual Stay Support & Lock Codes</li>
+            </ul>
+          </div>
+
+          <!-- Feature 5: Guest Screening & Asset Protection -->
+          <div class="gold-card p-6 sm:p-7 flex flex-col justify-between space-y-5 group">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="w-11 h-11 rounded-xl bg-[#0A142A] border border-[#D4AF37]/40 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                  🛡️
+                </div>
+                <span class="text-lg font-bold font-mono-num text-[#D4AF37]/40 group-hover:text-[#D4AF37] transition-colors">05</span>
+              </div>
+              <h3 class="text-lg font-bold font-serif text-white">Guest Screening & Risk Shield</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Rigorous ID verification and screening protocols preventing unauthorized parties, noise violations, or property damage before check-in.
+              </p>
+            </div>
+            <ul class="space-y-2 text-[11px] text-slate-300 pt-3 border-t border-slate-800/80">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Government ID & Criminal Backgrounds</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Minut/NoiseAware Party Prevention</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Automated Security Deposit Holds</li>
+            </ul>
+          </div>
+
+          <!-- Feature 6: Listing Optimization & Superhost Status -->
+          <div class="gold-card p-6 sm:p-7 flex flex-col justify-between space-y-5 group">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="w-11 h-11 rounded-xl bg-[#0A142A] border border-[#D4AF37]/40 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                  👑
+                </div>
+                <span class="text-lg font-bold font-mono-num text-[#D4AF37]/40 group-hover:text-[#D4AF37] transition-colors">06</span>
+              </div>
+              <h3 class="text-lg font-bold font-serif text-white">Listing Optimization & Reviews</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                High-converting copywriting, SEO keyword positioning on Airbnb/VRBO, and automated review loops designed to guarantee Superhost rankings.
+              </p>
+            </div>
+            <ul class="space-y-2 text-[11px] text-slate-300 pt-3 border-t border-slate-800/80">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> High-Converting Titles & Copy</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Automated <span class="font-num">5-Star</span> Review Requests</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Multi-Channel Calendar Sync</li>
+            </ul>
+          </div>
+
+          <!-- Feature 7: Photography & Videography (If Required) -->
+          <div class="gold-card p-6 sm:p-7 flex flex-col justify-between space-y-5 group">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="w-11 h-11 rounded-xl bg-[#0A142A] border border-[#D4AF37]/40 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                  📸
+                </div>
+                <span class="text-lg font-bold font-mono-num text-[#D4AF37]/40 group-hover:text-[#D4AF37] transition-colors">07</span>
+              </div>
+              <div class="flex items-center justify-between flex-wrap gap-1">
+                <h3 class="text-lg font-bold font-serif text-white">Photography & Videography</h3>
+                <span class="px-2 py-0.5 bg-blue-500/20 border border-blue-500/40 text-blue-300 text-[10px] font-bold rounded-full">
+                  If Required
+                </span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                We coordinate professional HDR architectural photography, 4K drone cinematography, and 3D Matterport walkthroughs to double listing CTR.
+              </p>
+            </div>
+            <ul class="space-y-2 text-[11px] text-slate-300 pt-3 border-t border-slate-800/80">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Professional Architectural HDR Photos</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> <span class="font-num">4K</span> Aerial Drone Video Showcases</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> <span class="font-num">3D</span> Virtual Walkthrough Tours</li>
+            </ul>
+          </div>
+
+          <!-- Feature 8: We Will Help You To Expand -->
+          <div class="gold-card p-6 sm:p-7 flex flex-col justify-between space-y-5 group">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="w-11 h-11 rounded-xl bg-[#0A142A] border border-[#D4AF37]/40 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                  🚀
+                </div>
+                <span class="text-lg font-bold font-mono-num text-[#D4AF37]/40 group-hover:text-[#D4AF37] transition-colors">08</span>
+              </div>
+              <div class="flex items-center justify-between flex-wrap gap-1">
+                <h3 class="text-lg font-bold font-serif text-white">We Will Help You To Expand</h3>
+                <span class="px-2 py-0.5 bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#F3E096] text-[10px] font-bold rounded-full font-num">
+                  Portfolio Scale
+                </span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Ready to acquire your next property? We underwrite real estate acquisitions, provide investor revenue projections, and offer turnkey onboarding.
+              </p>
+            </div>
+            <ul class="space-y-2 text-[11px] text-slate-300 pt-3 border-t border-slate-800/80">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Market Acquisition Underwriting & ROI</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Multi-Property Scaling Roadmaps</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Turnkey Setup in Under <span class="font-num">72</span> Hours</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- HIGHLIGHTED FULL-WIDTH FEATURE BANNER: WE CONNECT INTO YOUR PMS -->
+        <div class="gold-card p-8 sm:p-12 border-2 border-[#D4AF37] bg-gradient-to-r from-[#0A142A] via-[#112352] to-[#0A142A] relative overflow-hidden shadow-[0_0_50px_rgba(212,175,55,0.3)] rounded-3xl group">
+          <div class="absolute -right-16 -bottom-16 w-80 h-80 bg-[#D4AF37]/15 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+            <div class="lg:col-span-8 space-y-4 text-center lg:text-left">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#D4AF37]/20 border border-[#D4AF37] rounded-full text-xs font-bold text-[#F3E096] uppercase tracking-widest font-mono-num">
+                <span>🔌 UNIVERSAL PMS INTEGRATION • HIGHLIGHTED FEATURE</span>
+              </div>
+              <h3 class="text-2xl sm:text-4xl font-extrabold font-serif text-white leading-tight">
+                We Connect Into Your PMS <span class="gold-text-gradient">(Zero Migration Hassle)</span>
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-200 leading-relaxed max-w-3xl">
+                Already using a software stack you love? No problem. <strong class="text-[#F3E096]">We connect directly into your PMS</strong> via official 2-way API integrations. Whether you run your portfolio on <strong class="text-white">Hostaway, Guesty, Hospitable, OwnerRez, Track, Lodgify, or Guesty for Hosts</strong>, our AI chatbots, dynamic pricing engine, and custom direct booking website connect seamlessly without disrupting your existing calendar, lock automations, or owner payouts!
+              </p>
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 pt-2">
+                <span class="px-3 py-1.5 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-lg text-xs font-bold text-[#F3E096]">✓ Hostaway Connected</span>
+                <span class="px-3 py-1.5 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-lg text-xs font-bold text-[#F3E096]">✓ Guesty Pro & Lite</span>
+                <span class="px-3 py-1.5 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-lg text-xs font-bold text-[#F3E096]">✓ Hospitable API</span>
+                <span class="px-3 py-1.5 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-lg text-xs font-bold text-[#F3E096]">✓ OwnerRez Sync</span>
+                <span class="px-3 py-1.5 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-lg text-xs font-bold text-[#F3E096]">✓ Lodgify & Track</span>
+              </div>
+            </div>
+            
+            <div class="lg:col-span-4 flex flex-col items-center justify-center p-6 sm:p-8 bg-[#060B18]/95 rounded-2xl border-2 border-[#D4AF37]/60 text-center space-y-4 shadow-xl">
+              <div class="w-16 h-16 rounded-2xl bg-[#D4AF37]/20 border border-[#D4AF37] flex items-center justify-center text-3xl animate-bounce">
+                🔌
+              </div>
+              <div class="space-y-1">
+                <div class="text-base font-bold text-white uppercase tracking-wider">Instant 15-Min Sync</div>
+                <p class="text-[11px] text-slate-300">We connect into your PMS while keeping your operational workflows 100% intact.</p>
+              </div>
+              <a href="#start-with-us" class="gold-btn w-full py-3 rounded-xl text-xs uppercase font-bold tracking-wider block text-center">
+                Connect Your PMS Today
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: PORTFOLIO SHOWCASE (200+ LISTINGS MANAGED) -->
+    <section id="portfolio" class="py-20 bg-[#070E20] border-t border-[#D4AF37]/20 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+        
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-slate-800/80 pb-8">
+          <div class="space-y-3 max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#D4AF37]/15 border border-[#D4AF37]/40 rounded-full text-xs font-bold text-[#F3E096] uppercase tracking-widest">
+              <span>🌟 Portfolio Showcase</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="font-num">200+ Listings Managed</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white leading-tight">
+              Trusted Across <span class="gold-text-gradient">200+ Luxury Properties</span> Worldwide
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300">
+              From flagship villas like <strong class="text-white">Villa Vista</strong> and <strong class="text-white">Kazani Heights</strong> to specialized holiday homes, <strong class="text-[#F3E096]">we connect into your PMS</strong> and deploy our revenue engineering to outperform local market benchmarks.
+            </p>
+          </div>
+          
+          <div class="flex flex-wrap items-center gap-2 flex-shrink-0">
+            <button class="px-4 py-2 rounded-xl bg-[#D4AF37] text-[#060B18] text-xs font-bold uppercase tracking-wider shadow-lg">All 200+ Properties</button>
+            <button class="px-4 py-2 rounded-xl bg-[#0A142A] border border-slate-700 text-slate-300 hover:text-[#D4AF37] text-xs font-bold uppercase tracking-wider transition">Luxury Villas</button>
+            <button class="px-4 py-2 rounded-xl bg-[#0A142A] border border-slate-700 text-slate-300 hover:text-[#D4AF37] text-xs font-bold uppercase tracking-wider transition">Executive Penthouses</button>
+            <button class="px-4 py-2 rounded-xl bg-[#0A142A] border border-slate-700 text-slate-300 hover:text-[#D4AF37] text-xs font-bold uppercase tracking-wider transition">Holiday Homes</button>
+          </div>
+        </div>
+
+        <!-- 8 Featured Properties Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Property 1: Villa Vista -->
+          <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
+            <div class="relative h-48 bg-[#060B18] overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
+              <div class="w-full h-full bg-gradient-to-br from-[#11224E] via-[#0D1B3E] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
+                🏰
+              </div>
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
+                Flagship Villa
+              </div>
+              <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
+                <span>🔌 PMS Sync</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+              <div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                  <span>Beverly Hills / Malibu</span>
+                  <span class="text-amber-400 font-bold">★ 5.0 (142 Rev)</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Villa Vista</h3>
+                <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">6-Bedroom Luxury Infinity Pool Estate with private cliffside panoramic ocean views.</p>
+              </div>
+              <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="font-bold text-[#F3E096]">$850 / nt</div>
+                </div>
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="font-bold text-emerald-400">96% Avg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 2: Kazani Heights -->
+          <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
+            <div class="relative h-48 bg-[#060B18] overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
+              <div class="w-full h-full bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
+                🏙️
+              </div>
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
+                Executive Penthouse
+              </div>
+              <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
+                <span>🔌 PMS Sync</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+              <div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                  <span>Downtown Skyline</span>
+                  <span class="text-amber-400 font-bold">★ 4.98 (98 Rev)</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Kazani Heights</h3>
+                <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">3-Bedroom High-Rise Skyline Penthouse with private rooftop terrace & concierge elevator.</p>
+              </div>
+              <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="font-bold text-[#F3E096]">$420 / nt</div>
+                </div>
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="font-bold text-emerald-400">94% Avg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 3: Resid Elite -->
+          <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
+            <div class="relative h-48 bg-[#060B18] overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
+              <div class="w-full h-full bg-gradient-to-br from-[#162E5A] via-[#0E1E3E] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
+                ✨
+              </div>
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
+                Urban Sanctuary
+              </div>
+              <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
+                <span>🔌 PMS Sync</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+              <div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                  <span>Arts District Prime</span>
+                  <span class="text-amber-400 font-bold">★ 5.0 (215 Rev)</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Resid Elite</h3>
+                <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">2-Bedroom Architectural Loft engineered for corporate travelers and high-ticket weekend stays.</p>
+              </div>
+              <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="font-bold text-[#F3E096]">$310 / nt</div>
+                </div>
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="font-bold text-emerald-400">98% Avg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 4: Cineplex Holiday Homes -->
+          <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
+            <div class="relative h-48 bg-[#060B18] overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
+              <div class="w-full h-full bg-gradient-to-br from-[#311042] via-[#1C0D2C] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
+                🎬
+              </div>
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
+                Holiday Home
+              </div>
+              <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
+                <span>🔌 PMS Sync</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+              <div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                  <span>West Hollywood / Metro</span>
+                  <span class="text-amber-400 font-bold">★ 4.97 (178 Rev)</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Cineplex Holiday Homes</h3>
+                <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">4-Bedroom Luxury Holiday Home equipped with private Dolby Atmos cinema screening room & heated spa.</p>
+              </div>
+              <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="font-bold text-[#F3E096]">$550 / nt</div>
+                </div>
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="font-bold text-emerald-400">92% Avg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 5: Azure Horizon Penthouse (Added Holiday Home 1) -->
+          <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
+            <div class="relative h-48 bg-[#060B18] overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
+              <div class="w-full h-full bg-gradient-to-br from-[#0C356A] via-[#091F40] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
+                🌊
+              </div>
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
+                Waterfront Holiday Home
+              </div>
+              <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
+                <span>🔌 PMS Sync</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+              <div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                  <span>Coastal Cove / Miami</span>
+                  <span class="text-amber-400 font-bold">★ 4.99 (110 Rev)</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Azure Horizon Penthouse</h3>
+                <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">5-Bedroom Glass Front Holiday Residence featuring private yacht dockage & panoramic sunset views.</p>
+              </div>
+              <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="font-bold text-[#F3E096]">$680 / nt</div>
+                </div>
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="font-bold text-emerald-400">95% Avg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 6: Palm Grove Sanctuary (Added Holiday Home 2) -->
+          <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
+            <div class="relative h-48 bg-[#060B18] overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
+              <div class="w-full h-full bg-gradient-to-br from-[#0B3B24] via-[#062013] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
+                🌴
+              </div>
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
+                Garden Holiday Villa
+              </div>
+              <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
+                <span>🔌 PMS Sync</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+              <div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                  <span>Scottsdale / Palm Springs</span>
+                  <span class="text-amber-400 font-bold">★ 5.0 (88 Rev)</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Palm Grove Sanctuary</h3>
+                <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">5-Bedroom Tropical Holiday Oasis with outdoor chef kitchen, fire pits & putting greens.</p>
+              </div>
+              <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="font-bold text-[#F3E096]">$750 / nt</div>
+                </div>
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="font-bold text-emerald-400">91% Avg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 7: Serenity Alpine Chalet (Added Holiday Home 3) -->
+          <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
+            <div class="relative h-48 bg-[#060B18] overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
+              <div class="w-full h-full bg-gradient-to-br from-[#1A365D] via-[#0F1E36] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
+                🏔️
+              </div>
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
+                Alpine Holiday Lodge
+              </div>
+              <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
+                <span>🔌 PMS Sync</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+              <div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                  <span>Aspen / Tahoe / Vail</span>
+                  <span class="text-amber-400 font-bold">★ 4.96 (164 Rev)</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Serenity Alpine Chalet</h3>
+                <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">6-Bedroom Ski-in/Ski-out Holiday Home featuring cedar saunas and heated stone Jacuzzi decks.</p>
+              </div>
+              <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="font-bold text-[#F3E096]">$920 / nt</div>
+                </div>
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="font-bold text-emerald-400">97% Avg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 8: Skyline Loft 402 (Added Holiday Home 4) -->
+          <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
+            <div class="relative h-48 bg-[#060B18] overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
+              <div class="w-full h-full bg-gradient-to-br from-[#2E1065] via-[#170833] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
+                🎨
+              </div>
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
+                Designer Holiday Loft
+              </div>
+              <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
+                <span>🔌 PMS Sync</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+              <div>
+                <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                  <span>SoHo / Tribeca / Austin</span>
+                  <span class="text-amber-400 font-bold">★ 5.0 (132 Rev)</span>
+                </div>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Skyline Loft 402</h3>
+                <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">2-Bedroom Industrial Designer Duplex engineered for luxury city holiday getaways and executive retreats.</p>
+              </div>
+              <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="font-bold text-[#F3E096]">$340 / nt</div>
+                </div>
+                <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
+                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="font-bold text-emerald-400">96% Avg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Portfolio Footer CTA Banner -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-[#0A142A]/90 border border-[#D4AF37]/40 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="space-y-1 text-center sm:text-left">
+            <h4 class="text-lg font-bold font-serif text-white">Want Your Property Featured in Our 200+ Portfolio?</h4>
+            <p class="text-xs text-slate-300">We connect into your existing PMS in under 15 minutes and begin optimizing your pricing immediately.</p>
+          </div>
+          <a href="#start-with-us" class="gold-btn px-6 py-3 rounded-xl text-xs uppercase font-bold tracking-wider whitespace-nowrap flex-shrink-0">
+            Audit Your Property Revenue →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT US -->
+    <section id="about" class="py-20 bg-[#070E20] border-t border-[#D4AF37]/20">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest">About Hostly</span>
+            <h2 class="text-3xl font-bold font-serif text-white leading-tight">
+              Pioneering Modern <span class="gold-text-gradient">Co-Hosting Precision</span>
+            </h2>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Hostly was established to eliminate the constant friction of short-term rental management. We combine high-touch hospitality standards with automated backend systems.
+            </p>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Whether managing luxury villas or urban apartment portfolios, our mission is clear: maximize net income, safeguard physical assets with expert maintenance, and deliver complete peace of mind to property owners.
+            </p>
+            <div class="pt-2">
+              <a href="#start-with-us" class="gold-btn-outline px-6 py-3 rounded-lg text-xs uppercase font-bold inline-block">
+                Work With Us
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 gold-card p-8 space-y-6">
+            <h3 class="text-lg font-bold font-serif text-white border-b border-[#D4AF37]/20 pb-3">Our Core Pillars</h3>
+            
+            <div class="space-y-5">
+              <div class="flex items-start gap-4">
+                <div class="p-2 bg-[#D4AF37]/15 rounded-lg border border-[#D4AF37]/30 text-lg">⚡</div>
+                <div>
+                  <h4 class="text-xs font-bold text-[#F3E096] uppercase">Instant Response Culture</h4>
+                  <p class="text-xs text-slate-400 mt-1">Average guest inquiry response times under 180 seconds around the clock to lock in instant bookings.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="p-2 bg-[#D4AF37]/15 rounded-lg border border-[#D4AF37]/30 text-lg">🔧</div>
+                <div>
+                  <h4 class="text-xs font-bold text-[#F3E096] uppercase">Proactive Asset Protection</h4>
+                  <p class="text-xs text-slate-400 mt-1">Rigorous cleaner checklists, local vendor maintenance networks, and instant post-stay damage inspections.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="p-2 bg-[#D4AF37]/15 rounded-lg border border-[#D4AF37]/30 text-lg">🌐</div>
+                <div>
+                  <h4 class="text-xs font-bold text-[#F3E096] uppercase">Direct Booking Autonomy</h4>
+                  <p class="text-xs text-slate-400 mt-1">Empowering hosts with free direct booking websites to reduce dependence on OTA algorithm swings.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: CLIENT REVIEWS (Interactive Sliding Testimonial Carousel with Pakistani Names) -->
+    <section id="reviews" class="py-20 bg-[#060B18]">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <!-- Testimonial Header & Slider Controls -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-slate-800/80 pb-8">
+          <div class="space-y-2 text-center md:text-left max-w-xl">
+            <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest">Pakistani Host Success Stories</span>
+            <h2 class="text-3xl font-bold font-serif text-white">What Property Owners Say</h2>
+            <p class="text-xs text-slate-300">
+              Hear from short-term rental owners across Islamabad, Lahore, Karachi, and Northern Areas who transformed their operations with Hostly.
+            </p>
+          </div>
+          
+          <!-- Navigation Arrows & Status Badge -->
+          <div class="flex items-center gap-3">
+            <div class="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0A142A] border border-slate-800 text-[11px] font-mono-num">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="text-slate-300">Slide <strong id="test-slide-indicator" class="text-[#F3E096]">1</strong> of <strong id="test-slide-total">7</strong></span>
+            </div>
+            <button id="test-prev-btn" title="Previous Testimonial" class="w-11 h-11 rounded-full bg-[#0A142A] border border-slate-700 hover:border-[#D4AF37] text-slate-300 hover:text-white flex items-center justify-center transition shadow-md cursor-pointer hover:scale-105">
+              ←
+            </button>
+            <button id="test-next-btn" title="Next Testimonial" class="w-11 h-11 rounded-full bg-[#0A142A] border border-slate-700 hover:border-[#D4AF37] text-slate-300 hover:text-white flex items-center justify-center transition shadow-md cursor-pointer hover:scale-105">
+              →
+            </button>
+          </div>
+        </div>
+
+        <!-- Sliding Testimonials Viewport -->
+        <div class="relative overflow-hidden w-full -mx-3 px-3 py-2">
+          <!-- Track -->
+          <div id="testimonials-track" class="flex transition-transform duration-500 ease-in-out">
+            
+            <!-- Card 1: Raja Abubakar -->
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div class="gold-card p-8 space-y-6 flex flex-col justify-between h-full rounded-2xl shadow-xl service-card-highlight border-[#D4AF37]/50">
+                <div class="space-y-4">
+                  <div class="flex text-[#D4AF37] text-sm">★★★★★</div>
+                  <p class="text-xs text-slate-300 leading-relaxed italic">
+                    "Hostly built our custom direct booking website in less than 3 days. We saved over $14,000 in OTA commission fees in our first 6 months alone, and cleaner turnovers in Murree are totally flawless now."
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-bold text-white">Raja Abubakar</div>
+                    <div class="text-[10px] text-slate-400">6 Luxury Villas • Islamabad / Murree Hills</div>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">+38% Revenue</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Bilal Ahmed -->
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div class="gold-card p-8 space-y-6 flex flex-col justify-between h-full rounded-2xl shadow-xl">
+                <div class="space-y-4">
+                  <div class="flex text-[#D4AF37] text-sm">★★★★★</div>
+                  <p class="text-xs text-slate-300 leading-relaxed italic">
+                    "Maintenance used to be my biggest headache with remote properties in Lahore DHA. Hostly handles cleaner dispatch, emergency plumbing, and 24/7 guest messages. I literally do zero daily work now."
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-bold text-white">Bilal Ahmed</div>
+                    <div class="text-[10px] text-slate-400">8 STR Units • Lahore Gulberg & DHA</div>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">100% Hands-Free</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Zainab Malik -->
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div class="gold-card p-8 space-y-6 flex flex-col justify-between h-full rounded-2xl shadow-xl">
+                <div class="space-y-4">
+                  <div class="flex text-[#D4AF37] text-sm">★★★★★</div>
+                  <p class="text-xs text-slate-300 leading-relaxed italic">
+                    "Their dynamic pricing team tuned our night rates for holiday weekends in Bhurban. Our average daily rate jumped from $240 to $390 with 94% occupancy. Outstanding return on investment!"
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-bold text-white">Zainab Malik</div>
+                    <div class="text-[10px] text-slate-400">4 Mountain Chalets • Bhurban & Kalam Valley</div>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">+29% ADR Boost</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Usman Tariq -->
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div class="gold-card p-8 space-y-6 flex flex-col justify-between h-full rounded-2xl shadow-xl">
+                <div class="space-y-4">
+                  <div class="flex text-[#D4AF37] text-sm">★★★★★</div>
+                  <p class="text-xs text-slate-300 leading-relaxed italic">
+                    "Switching from standard local management to Hostly transformed our cash flow. The automated AI concierge responds to Karachi corporate bookers within 90 seconds. Truly game-changing precision."
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-bold text-white">Usman Tariq</div>
+                    <div class="text-[10px] text-slate-400">5 Executive Penthouses • Karachi Clifton</div>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">+42% Net Yield</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Ayesha Siddiqui -->
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div class="gold-card p-8 space-y-6 flex flex-col justify-between h-full rounded-2xl shadow-xl">
+                <div class="space-y-4">
+                  <div class="flex text-[#D4AF37] text-sm">★★★★★</div>
+                  <p class="text-xs text-slate-300 leading-relaxed italic">
+                    "Our E-7 properties used to experience seasonal dips. Hostly's PriceLabs synchronization and direct corporate booking portal kept our occupancy above 92% all winter. Exceptional co-hosting!"
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-bold text-white">Ayesha Siddiqui</div>
+                    <div class="text-[10px] text-slate-400">5 Holiday Homes • Islamabad E-7 & F-6</div>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">Zero Vacancy</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Shahzaib Chaudhry -->
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div class="gold-card p-8 space-y-6 flex flex-col justify-between h-full rounded-2xl shadow-xl">
+                <div class="space-y-4">
+                  <div class="flex text-[#D4AF37] text-sm">★★★★★</div>
+                  <p class="text-xs text-slate-300 leading-relaxed italic">
+                    "Managing farmhouses on Bedian Road requires rigorous guest screening and instant security verification. Hostly handles pre-arrival vetting and security deposits seamlessly without any hassle."
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-bold text-white">Shahzaib Chaudhry</div>
+                    <div class="text-[10px] text-slate-400">3 Luxury Farmhouses • Lahore Bedian Road</div>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">+$3,800 / Mo Boost</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7: Hamza Khan -->
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div class="gold-card p-8 space-y-6 flex flex-col justify-between h-full rounded-2xl shadow-xl">
+                <div class="space-y-4">
+                  <div class="flex text-[#D4AF37] text-sm">★★★★★</div>
+                  <p class="text-xs text-slate-300 leading-relaxed italic">
+                    "The custom direct booking website Hostly built for our Hunza resorts is a masterpiece! We receive direct payments via Stripe and our guests love the seamless mobile checkout experience."
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-bold text-white">Hamza Khan</div>
+                    <div class="text-[10px] text-slate-400">7 Alpine Lodges • Hunza & Skardu Valley</div>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">+38% Direct Bookings</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8: Faisal Qureshi -->
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div class="gold-card p-8 space-y-6 flex flex-col justify-between h-full rounded-2xl shadow-xl">
+                <div class="space-y-4">
+                  <div class="flex text-[#D4AF37] text-sm">★★★★★</div>
+                  <p class="text-xs text-slate-300 leading-relaxed italic">
+                    "We were worried about connecting our existing Guesty account, but Hostly synced our entire marina portfolio in literally 15 minutes. No downtime, just immediate yield improvements."
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-bold text-white">Faisal Qureshi</div>
+                    <div class="text-[10px] text-slate-400">4 Waterfront Villas • Gwadar & Karachi Marina</div>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">Flawless PMS Sync</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9: Mahnoor Lodhi -->
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+              <div class="gold-card p-8 space-y-6 flex flex-col justify-between h-full rounded-2xl shadow-xl">
+                <div class="space-y-4">
+                  <div class="flex text-[#D4AF37] text-sm">★★★★★</div>
+                  <p class="text-xs text-slate-300 leading-relaxed italic">
+                    "Since Hostly took over our guest communications and cleaner checklists, all 5 of our DHA properties have maintained a clean 5.0-star rating on Airbnb and Vrbo. Best decision we ever made!"
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-bold text-white">Mahnoor Lodhi</div>
+                    <div class="text-[10px] text-slate-400">5 Designer Lofts • Lahore DHA Phase 6</div>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">5.0★ Rating</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Interactive Indicator Dots -->
+        <div id="test-dots-container" class="flex items-center justify-center gap-2.5 pt-4">
+          <!-- Dynamically populated by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: FAQS -->
+    <section id="faq" class="py-20 bg-[#070E20] border-t border-[#D4AF37]/20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+          <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest">Frequently Asked Questions</span>
+          <h2 class="text-3xl font-bold font-serif text-white">Clear Answers for Property Owners</h2>
+        </div>
+
+        <div class="space-y-4">
+          
+          <div class="faq-item gold-card p-6">
+            <button class="faq-btn w-full flex items-center justify-between text-left font-serif text-base font-bold text-white cursor-pointer">
+              <span>Is the Direct Booking Website really 100% free?</span>
+              <span class="faq-icon text-[#D4AF37] font-sans text-xl">+</span>
+            </button>
+            <div class="faq-answer hidden mt-4 text-xs text-slate-300 leading-relaxed border-t border-slate-800 pt-3">
+              Yes! As part of our co-hosting partnership, we design, build, and host a custom-branded direct booking website for your property at no extra setup charge. You get direct Stripe payment processing and keep 100% of guest payments without OTA fees.
+            </div>
+          </div>
+
+          <div class="faq-item gold-card p-6">
+            <button class="faq-btn w-full flex items-center justify-between text-left font-serif text-base font-bold text-white cursor-pointer">
+              <span>How does Hostly handle property maintenance and cleanings?</span>
+              <span class="faq-icon text-[#D4AF37] font-sans text-xl">+</span>
+            </button>
+            <div class="faq-answer hidden mt-4 text-xs text-slate-300 leading-relaxed border-t border-slate-800 pt-3">
+              We integrate with your local cleaners or deploy our vetted vendor network. Our team schedules cleanings after every checkout, verifies photo inspection reports, and dispatches emergency maintenance technicians immediately if issues arise.
+            </div>
+          </div>
+
+          <div class="faq-item gold-card p-6">
+            <button class="faq-btn w-full flex items-center justify-between text-left font-serif text-base font-bold text-white cursor-pointer">
+              <span>How do you increase my property's rental revenue?</span>
+              <span class="faq-icon text-[#D4AF37] font-sans text-xl">+</span>
+            </button>
+            <div class="faq-answer hidden mt-4 text-xs text-slate-300 leading-relaxed border-t border-slate-800 pt-3">
+              We combine automated price tools (PriceLabs) with daily human revenue analysis. We adjust rates based on local event compression, lead times, and seasonal demand to boost your Average Daily Rate (ADR) by 25%-35%.
+            </div>
+          </div>
+
+          <div class="faq-item gold-card p-6">
+            <button class="faq-btn w-full flex items-center justify-between text-left font-serif text-base font-bold text-white cursor-pointer">
+              <span>Do I have to switch software? How do you connect into my existing PMS?</span>
+              <span class="faq-icon text-[#D4AF37] font-sans text-xl">+</span>
+            </button>
+            <div class="faq-answer hidden mt-4 text-xs text-slate-300 leading-relaxed border-t border-slate-800 pt-3 space-y-2">
+              <p><strong class="text-[#F3E096]">No migration required! We connect directly into your existing PMS.</strong> Whether you use Hostaway, Guesty, Hospitable, OwnerRez, Track, or Lodgify, our automated revenue engines, 24/7 AI chatbots, and custom direct booking website link via official 2-way API synchronization.</p>
+              <p>Your calendar, smart lock automations, and owner payout accounts remain untouched while we supercharge your net rental revenue.</p>
+            </div>
+          </div>
+
+          <div class="faq-item gold-card p-6">
+            <button class="faq-btn w-full flex items-center justify-between text-left font-serif text-base font-bold text-white cursor-pointer">
+              <span>How fast does your 24/7 AI & Human Concierge respond to guests?</span>
+              <span class="faq-icon text-[#D4AF37] font-sans text-xl">+</span>
+            </button>
+            <div class="faq-answer hidden mt-4 text-xs text-slate-300 leading-relaxed border-t border-slate-800 pt-3">
+              Our 24/7 communication stack uses intelligent AI chatbots to answer 85% of standard inquiries <strong class="text-white">in under 3 minutes (180 seconds)</strong> around the clock. For complex guest support or maintenance emergencies, our live human concierges guarantee a complete resolution and dispatch <strong class="text-[#F3E096]">in under 30 minutes</strong>!
+            </div>
+          </div>
+
+          <div class="faq-item gold-card p-6">
+            <button class="faq-btn w-full flex items-center justify-between text-left font-serif text-base font-bold text-white cursor-pointer">
+              <span>How long does onboarding take? Can you help me expand my portfolio?</span>
+              <span class="faq-icon text-[#D4AF37] font-sans text-xl">+</span>
+            </button>
+            <div class="faq-answer hidden mt-4 text-xs text-slate-300 leading-relaxed border-t border-slate-800 pt-3">
+              Onboarding takes between 24 and 72 hours. We connect into your existing PMS instantly. Plus, <strong class="text-[#F3E096]">we help you expand</strong> by providing real estate acquisition underwriting, market ROI forecasting, and turnkey multi-property onboarding when you're ready to add new holiday homes or villas!
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: START WITH US (With WhatsApp & Gmail Integration) -->
+    <section id="start-with-us" class="py-20 bg-[#060B18] relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="gold-card p-8 sm:p-12 border-[#D4AF37]/40 relative overflow-hidden space-y-10">
+          
+          <!-- Section Heading -->
+          <div class="text-center max-w-2xl mx-auto space-y-3">
+            <span class="px-3 py-1 bg-[#D4AF37]/15 border border-[#D4AF37]/40 rounded-full text-xs text-[#F3E096] font-bold uppercase tracking-widest">
+              Ready to Grow Your Income?
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white">Start With Us</h2>
+            <p class="text-xs sm:text-sm text-slate-300">
+              Get in touch directly via WhatsApp or Email, or submit the form below for a free portfolio revenue audit and direct booking website demo.
+            </p>
+          </div>
+
+          <!-- Direct Contact Action Bar (WhatsApp & Gmail Buttons) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/15550192837?text=Hi%20Hostly%20team%2C%20I%20am%20interested%20in%20starting%20co-hosting%20and%20getting%20my%20free%20direct%20booking%20website." target="_blank" class="whatsapp-btn p-5 rounded-xl flex items-center justify-between group">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">💬</span>
+                <div class="text-left">
+                  <div class="text-xs font-extrabold uppercase tracking-wider">Chat on WhatsApp</div>
+                  <div class="text-[11px] opacity-90">+1 (555) 019-2837</div>
+                </div>
+              </div>
+              <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+            </a>
+
+            <!-- Gmail Button -->
+            <a href="mailto:abubakarraja345@gmail.com?subject=Hostly%20Co-Hosting%20and%20Direct%20Booking%20Inquiry" class="gmail-btn p-5 rounded-xl flex items-center justify-between group">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">✉️</span>
+                <div class="text-left">
+                  <div class="text-xs font-extrabold uppercase tracking-wider">Email via Gmail</div>
+                  <div class="text-[11px] opacity-90">abubakarraja345@gmail.com</div>
+                </div>
+              </div>
+              <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+            </a>
+
+          </div>
+
+          <!-- Divider -->
+          <div class="relative flex items-center justify-center max-w-2xl mx-auto">
+            <div class="border-t border-slate-800 w-full"></div>
+            <span class="bg-[#0A142A] px-4 text-[10px] text-slate-400 uppercase tracking-widest font-bold">Or Send An Instant Inquiry</span>
+            <div class="border-t border-slate-800 w-full"></div>
+          </div>
+
+          <!-- Form -->
+          <form id="start-form" class="space-y-6 max-w-2xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="start-name" class="block text-xs font-semibold text-slate-300 mb-1">Full Name</label>
+                <input type="text" id="start-name" required placeholder="Raja Abubakar" class="w-full px-4 py-3 bg-[#060B18] border border-slate-800 focus:border-[#D4AF37] rounded-lg text-xs text-white outline-none transition">
+              </div>
+              <div>
+                <label for="start-email" class="block text-xs font-semibold text-slate-300 mb-1">Email Address</label>
+                <input type="email" id="start-email" required placeholder="raja.abubakar@gmail.com" class="w-full px-4 py-3 bg-[#060B18] border border-slate-800 focus:border-[#D4AF37] rounded-lg text-xs text-white outline-none transition">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="start-phone" class="block text-xs font-semibold text-slate-300 mb-1">WhatsApp / Phone Number</label>
+                <input type="tel" id="start-phone" placeholder="+92 (300) 123-4567" class="w-full px-4 py-3 bg-[#060B18] border border-slate-800 focus:border-[#D4AF37] rounded-lg text-xs text-white outline-none transition">
+              </div>
+              <div>
+                <label for="start-units" class="block text-xs font-semibold text-slate-300 mb-1">Number of Properties</label>
+                <select id="start-units" class="w-full px-4 py-3 bg-[#060B18] border border-slate-800 focus:border-[#D4AF37] rounded-lg text-xs text-white outline-none transition">
+                  <option value="1">1 Property</option>
+                  <option value="2-5">2 - 5 Properties</option>
+                  <option value="6-15">6 - 15 Properties</option>
+                  <option value="16+">16+ Properties</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="start-service" class="block text-xs font-semibold text-slate-300 mb-1">Primary Interest</label>
+              <select id="start-service" class="w-full px-4 py-3 bg-[#060B18] border border-slate-800 focus:border-[#D4AF37] rounded-lg text-xs text-white outline-none transition">
+                <option value="Full Co-Hosting">Full Co-Hosting + Free Direct Booking Website</option>
+                <option value="Maintenance & Cleaning">Property Maintenance & Cleaner Management</option>
+                <option value="Revenue Boosting">Dynamic Pricing & Revenue Increase</option>
+                <option value="Direct Website Only">Free Direct Booking Website Setup</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="start-message" class="block text-xs font-semibold text-slate-300 mb-1">Message / Property Link (Optional)</label>
+              <textarea id="start-message" rows="3" placeholder="Hi Raja Abubakar, tell us about your properties (e.g. villas in Islamabad / Lahore) or paste your Airbnb link..." class="w-full px-4 py-3 bg-[#060B18] border border-slate-800 focus:border-[#D4AF37] rounded-lg text-xs text-white outline-none transition"></textarea>
+            </div>
+
+            <button type="submit" id="start-submit-btn" class="gold-btn w-full py-4 rounded-xl text-xs uppercase font-bold tracking-wider cursor-pointer">
+              Submit Inquiry & Connect With Us
+            </button>
+          </form>
+
+          <!-- Success Alert Box -->
+          <div id="start-success" class="hidden text-center p-8 bg-[#070E20] border border-emerald-500/40 rounded-xl space-y-4">
+            <span class="text-4xl">🎉</span>
+            <h3 class="text-xl font-bold font-serif text-emerald-400">Inquiry Received Successfully!</h3>
+            <p class="text-xs text-slate-300 max-w-md mx-auto leading-relaxed">
+              Thank you for reaching out to Hostly! Our Director of Co-Hosting will review your request and get back to you within 2 hours.
+            </p>
+
+            <div class="pt-2 flex justify-center gap-4">
+              <a href="https://wa.me/15550192837?text=Hi%20Hostly%2C%20I%20just%20submitted%20the%20form%20on%20your%20website." target="_blank" class="whatsapp-btn px-5 py-2.5 rounded-lg text-xs font-bold">
+                Follow up on WhatsApp
+              </a>
+              <button onclick="document.getElementById('start-success').classList.add('hidden'); document.getElementById('start-form').classList.remove('hidden');" class="gold-btn-outline px-5 py-2.5 rounded-lg text-xs font-semibold">
+                Send Another Message
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MINIMAL FOOTER -->
+    <footer class="py-12 bg-[#060B18] border-t border-[#D4AF37]/20 text-xs text-slate-400">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-3">
+            <span class="font-serif font-bold text-white tracking-widest text-lg gold-text-gradient uppercase">HOSTLY</span>
+            <span class="text-[11px] text-slate-500 border-l border-slate-800 pl-3">Luxury STR Co-Hosting & Operations</span>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-6 text-slate-300 font-medium">
+            <a href="#services" class="hover:text-[#D4AF37] transition">Services</a>
+            <a href="#about" class="hover:text-[#D4AF37] transition">About Us</a>
+            <a href="#reviews" class="hover:text-[#D4AF37] transition">Reviews</a>
+            <a href="#faq" class="hover:text-[#D4AF37] transition">FAQ</a>
+            <a href="#start-with-us" class="hover:text-[#D4AF37] transition">Start With Us</a>
+          </div>
+
+          <div class="flex items-center gap-4 text-slate-400">
+            <a href="mailto:abubakarraja345@gmail.com" class="hover:text-amber-300 transition">abubakarraja345@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+          <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4">
+            <p>© 2026 Hostly Inc. All rights reserved.</p>
+            <button data-theme-toggle class="flex items-center gap-2 bg-[#0A142A]/80 hover:bg-[#0D1628] px-3 py-1 rounded-full border border-slate-800 hover:border-slate-700 transition cursor-pointer group">
+              <span class="text-[10px] text-slate-400 font-bold uppercase font-mono-num">Theme:</span>
+              <span class="theme-toggle-icon text-xs">🌌</span>
+              <span class="theme-toggle-label text-[10px] font-bold font-mono-num text-slate-300 group-hover:text-white transition-colors">Slate Dark</span>
+              <span class="w-7 h-3.5 bg-slate-800 rounded-full relative inline-flex items-center px-0.5 border border-slate-600 transition-colors theme-switch-track ml-0.5">
+                <span class="w-2.5 h-2.5 bg-[#D4AF37] rounded-full transition-transform transform translate-x-0 theme-switch-thumb"></span>
+              </span>
+            </button>
+          </div>
+          <p>Designed for Short-Term Rental Property Owners & Operators.</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP LEAD CONVERSION BUTTON (Icon only by default, expands on hover) -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center">
+      <a href="https://wa.me/15550192837?text=Hi%20Hostly%2C%20I%20would%20like%20to%20learn%20more%20about%20co-hosting%20and%20the%20free%20direct%20booking%20website." 
+         target="_blank"
+         aria-label="Chat with Hostly on WhatsApp"
+         class="group relative flex items-center justify-center bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white h-14 min-w-[56px] px-3.5 rounded-full shadow-[0_4px_25px_rgba(37,211,102,0.5)] hover:shadow-[0_8px_35px_rgba(37,211,102,0.8)] hover:scale-105 transition-all duration-300 ease-out border border-white/25 overflow-hidden">
+        
+        <!-- Pulsing green indicator dot -->
+        <span class="absolute top-1.5 left-1.5 flex h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-400 border-2 border-[#060B18]"></span>
+        </span>
+
+        <!-- WhatsApp Icon SVG -->
+        <svg class="w-7 h-7 fill-current text-white shrink-0 drop-shadow" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.28.072.384-.048c.104-.12.448-.52.568-.7.12-.18.24-.15.404-.088.164.062 1.04.49 1.218.578.178.088.298.132.342.203.045.072.045.419-.1.824zm-3.423-10.416c-4.837 0-8.767 3.93-8.768 8.767 0 1.55.405 3.064 1.176 4.399l-1.25 4.568 4.677-1.226c1.286.702 2.748 1.072 4.256 1.072 4.836 0 8.767-3.93 8.768-8.767 0-4.837-3.931-8.767-8.759-8.713z"/>
+        </svg>
+
+        <!-- Button Text (Hidden by default, expands on hover) -->
+        <div class="max-w-0 opacity-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs group-hover:opacity-100 group-hover:ml-3 transition-all duration-300 ease-in-out flex flex-col text-left pr-1">
+          <span class="text-[9px] uppercase font-bold text-emerald-200 leading-none tracking-wider">Online • Instant Reply</span>
+          <span class="text-xs sm:text-sm font-extrabold leading-tight tracking-wide">Chat on WhatsApp</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Main TypeScript File -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

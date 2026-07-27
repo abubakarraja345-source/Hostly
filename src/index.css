@@ -1,0 +1,493 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #060B18;
+    color: #E2E8F0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(circle at 15% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 45%),
+      radial-gradient(circle at 85% 80%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
+      linear-gradient(rgba(212, 175, 55, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212, 175, 55, 0.025) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 60px 60px, 60px 60px;
+    background-position: center center;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cinzel', serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .font-num {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', monospace;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum", "zero";
+  }
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Luxury Gold Gradients & Effects */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFF3C4 0%, #E6C665 35%, #D4AF37 70%, #B88E23 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-text-gradient {
+  background: linear-gradient(135deg, #A7F3D0 0%, #34D399 50%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Gold Metallic Button */
+.gold-btn {
+  background: linear-gradient(135deg, #E6C665 0%, #F5E59F 35%, #D4AF37 70%, #B88E23 100%);
+  color: #060B18;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transform: rotate(30deg);
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.gold-btn:hover::after {
+  left: 100%;
+  opacity: 1;
+}
+
+.gold-btn:hover {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.45);
+  transform: translateY(-2px);
+}
+
+.gold-btn-outline {
+  background: rgba(14, 27, 56, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #F3E096;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.gold-btn-outline:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: #D4AF37;
+  color: #FFFFFF;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  transform: translateY(-1px);
+}
+
+/* WhatsApp & Gmail Special Buttons */
+.whatsapp-btn {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.25);
+}
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(37, 211, 102, 0.45);
+}
+
+.gmail-btn {
+  background: linear-gradient(135deg, #EA4335 0%, #C5221F 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(234, 67, 53, 0.25);
+}
+.gmail-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(234, 67, 53, 0.45);
+}
+
+/* Custom Luxury Glass Cards - Architectural Refinement */
+.gold-card {
+  background: linear-gradient(180deg, rgba(14, 26, 52, 0.7) 0%, rgba(8, 15, 32, 0.85) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 1.25rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.gold-card:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(212, 175, 55, 0.12), 0 0 20px rgba(212, 175, 55, 0.05);
+}
+
+.service-card-highlight {
+  background: linear-gradient(180deg, rgba(20, 36, 70, 0.8) 0%, rgba(10, 20, 42, 0.9) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 15px 35px -5px rgba(212, 175, 55, 0.12);
+}
+
+.gold-glow-ambient {
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, rgba(6, 11, 24, 0) 70%);
+}
+
+.emerald-glow-ambient {
+  background: radial-gradient(circle at 50% 100%, rgba(16, 185, 129, 0.06) 0%, rgba(6, 11, 24, 0) 70%);
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #060B18;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2D4A;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Custom Minimalist Precision Range Sliders */
+input[type="range"].gold-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: rgba(30, 45, 74, 0.6);
+  border-radius: 9999px;
+  outline: none;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  transition: all 0.2s ease;
+}
+
+input[type="range"].gold-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E6C665 40%, #D4AF37 70%, #997519 100%);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  border: 2px solid #060B18;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="range"].gold-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+}
+
+input[type="range"].gold-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFF3C4 0%, #E6C665 40%, #D4AF37 70%, #997519 100%);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  border: 2px solid #060B18;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* ========================================================
+   INTERACTIVE THEME SWITCHER & THEME OVERRIDES
+   ======================================================== */
+.theme-switcher-container {
+  background: rgba(14, 27, 56, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Single Toggle Button Switch Styling */
+.theme-toggle-btn {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --------------------------------------------------------
+   THEME 1: ALPINE CLEAN LIGHT (Warm Minimalist Light Version)
+   -------------------------------------------------------- */
+html[data-theme="light"] body {
+  background-color: #FAFAF9 !important;
+  color: #1E293B !important;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(184, 142, 35, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(184, 142, 35, 0.04) 0%, transparent 50%),
+    linear-gradient(rgba(184, 142, 35, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184, 142, 35, 0.035) 1px, transparent 1px) !important;
+}
+
+html[data-theme="light"] header > div {
+  background-color: rgba(250, 250, 249, 0.92) !important;
+  border-color: rgba(184, 142, 35, 0.22) !important;
+}
+html[data-theme="light"] #desktop-nav a {
+  color: #475569 !important;
+}
+html[data-theme="light"] #desktop-nav a:hover {
+  color: #997519 !important;
+}
+html[data-theme="light"] #mobile-menu {
+  background-color: #FFFFFF !important;
+  border-color: rgba(184, 142, 35, 0.25) !important;
+}
+html[data-theme="light"] #mobile-menu a {
+  color: #1E293B !important;
+}
+html[data-theme="light"] #mobile-menu-btn {
+  color: #1E293B !important;
+}
+html[data-theme="light"] .theme-switcher-container {
+  background: #E2E8F0 !important;
+  border-color: #CBD5E1 !important;
+}
+
+html[data-theme="light"] .text-white {
+  color: #0F172A !important;
+}
+html[data-theme="light"] .text-slate-300,
+html[data-theme="light"] .text-slate-400 {
+  color: #475569 !important;
+}
+html[data-theme="light"] .text-slate-200,
+html[data-theme="light"] .text-slate-500 {
+  color: #64748B !important;
+}
+html[data-theme="light"] .text-\[\#F3E096\] {
+  color: #997519 !important;
+}
+html[data-theme="light"] .text-\[\#D4AF37\] {
+  color: #B88E23 !important;
+}
+
+html[data-theme="light"] .gold-text-gradient {
+  background: linear-gradient(135deg, #7A5C12 0%, #B88E23 45%, #997519 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+html[data-theme="light"] .gold-card {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(184, 142, 35, 0.22) !important;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.07) !important;
+}
+html[data-theme="light"] .gold-card:hover {
+  border-color: rgba(184, 142, 35, 0.55) !important;
+  box-shadow: 0 20px 35px -10px rgba(184, 142, 35, 0.12), 0 0 15px rgba(0, 0, 0, 0.03) !important;
+}
+html[data-theme="light"] .service-card-highlight {
+  background: #F8FAFC !important;
+  border: 1px solid rgba(184, 142, 35, 0.45) !important;
+  box-shadow: 0 15px 35px -5px rgba(184, 142, 35, 0.1) !important;
+}
+
+html[data-theme="light"] .bg-\[\#060B18\],
+html[data-theme="light"] .bg-\[\#070E20\],
+html[data-theme="light"] .bg-\[\#0A142A\] {
+  background-color: #F5F5F4 !important;
+}
+html[data-theme="light"] .bg-\[\#0A142A\]\/80,
+html[data-theme="light"] .bg-\[\#0A142A\]\/60,
+html[data-theme="light"] .bg-\[\#0A142A\]\/90 {
+  background-color: #FFFFFF !important;
+  border-color: rgba(184, 142, 35, 0.22) !important;
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.05) !important;
+}
+html[data-theme="light"] .bg-\[\#060B18\]\/80 {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+html[data-theme="light"] .bg-gradient-to-br.from-\[\#060B18\].to-\[\#0D1832\] {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%) !important;
+  border-color: rgba(184, 142, 35, 0.3) !important;
+}
+
+html[data-theme="light"] .border-\[\#D4AF37\]\/20,
+html[data-theme="light"] .border-\[\#D4AF37\]\/25,
+html[data-theme="light"] .border-\[\#D4AF37\]\/30,
+html[data-theme="light"] .border-\[\#D4AF37\]\/40 {
+  border-color: rgba(184, 142, 35, 0.22) !important;
+}
+html[data-theme="light"] .border-slate-800,
+html[data-theme="light"] .border-slate-800\/80,
+html[data-theme="light"] .border-slate-800\/50,
+html[data-theme="light"] .border-slate-700 {
+  border-color: #E2E8F0 !important;
+}
+
+html[data-theme="light"] .gold-btn-outline {
+  background: #FFFFFF !important;
+  border: 1px solid #B88E23 !important;
+  color: #997519 !important;
+}
+html[data-theme="light"] .gold-btn-outline:hover {
+  background: #B88E23 !important;
+  color: #FFFFFF !important;
+}
+
+html[data-theme="light"] .bg-emerald-950\/30,
+html[data-theme="light"] .bg-emerald-950\/40,
+html[data-theme="light"] .bg-emerald-950\/50,
+html[data-theme="light"] .bg-emerald-950\/60,
+html[data-theme="light"] .bg-emerald-500\/10,
+html[data-theme="light"] .bg-emerald-500\/20 {
+  background-color: #ECFDF5 !important;
+  border-color: #A7F3D0 !important;
+}
+html[data-theme="light"] .text-emerald-300,
+html[data-theme="light"] .text-emerald-400 {
+  color: #047857 !important;
+}
+html[data-theme="light"] .bg-amber-950\/30 {
+  background-color: #FEFCE8 !important;
+}
+
+html[data-theme="light"] .bg-\[\#D4AF37\]\/15,
+html[data-theme="light"] .bg-\[\#D4AF37\]\/20,
+html[data-theme="light"] .bg-\[\#D4AF37\]\/30 {
+  background-color: rgba(184, 142, 35, 0.12) !important;
+  border-color: rgba(184, 142, 35, 0.3) !important;
+}
+
+html[data-theme="light"] input[type="range"].gold-slider {
+  background: #E2E8F0 !important;
+  border-color: #CBD5E1 !important;
+}
+html[data-theme="light"] input[type="range"].gold-slider::-webkit-slider-thumb {
+  border-color: #FFFFFF !important;
+}
+html[data-theme="light"] input,
+html[data-theme="light"] select,
+html[data-theme="light"] textarea {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
+/* --------------------------------------------------------
+   THEME 2: TITANIUM SLATE (Cleaner Executive Monochrome Dark)
+   -------------------------------------------------------- */
+html[data-theme="titanium"] body {
+  background-color: #090E17 !important;
+  color: #E2E8F0 !important;
+  background-image: 
+    radial-gradient(circle at 50% 10%, rgba(148, 163, 184, 0.05) 0%, transparent 60%),
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px) !important;
+}
+
+html[data-theme="titanium"] header > div {
+  background-color: rgba(9, 14, 23, 0.92) !important;
+  border-color: rgba(148, 163, 184, 0.22) !important;
+}
+html[data-theme="titanium"] #mobile-menu {
+  background-color: #0D1422 !important;
+  border-color: rgba(148, 163, 184, 0.25) !important;
+}
+html[data-theme="titanium"] .theme-switcher-container {
+  background: rgba(15, 23, 42, 0.9) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+}
+
+html[data-theme="titanium"] .gold-card {
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.75) 0%, rgba(11, 15, 25, 0.9) 100%) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6) !important;
+}
+html[data-theme="titanium"] .gold-card:hover {
+  border-color: rgba(203, 213, 225, 0.45) !important;
+  box-shadow: 0 20px 40px -10px rgba(148, 163, 184, 0.1), 0 0 20px rgba(148, 163, 184, 0.05) !important;
+}
+html[data-theme="titanium"] .service-card-highlight {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%) !important;
+  border-color: rgba(203, 213, 225, 0.45) !important;
+}
+
+html[data-theme="titanium"] .gold-text-gradient {
+  background: linear-gradient(135deg, #F8FAFC 0%, #CBD5E1 40%, #94A3B8 70%, #64748B 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+html[data-theme="titanium"] .gold-btn {
+  background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 35%, #CBD5E1 70%, #94A3B8 100%) !important;
+  color: #0F172A !important;
+  box-shadow: 0 4px 20px rgba(148, 163, 184, 0.22) !important;
+}
+html[data-theme="titanium"] .gold-btn:hover {
+  box-shadow: 0 0 30px rgba(148, 163, 184, 0.45) !important;
+}
+
+html[data-theme="titanium"] .gold-btn-outline {
+  border-color: rgba(148, 163, 184, 0.4) !important;
+  color: #E2E8F0 !important;
+}
+html[data-theme="titanium"] .gold-btn-outline:hover {
+  background: rgba(148, 163, 184, 0.15) !important;
+  border-color: #F8FAFC !important;
+  color: #FFFFFF !important;
+}
+
+html[data-theme="titanium"] .text-\[\#F3E096\],
+html[data-theme="titanium"] .text-\[\#D4AF37\] {
+  color: #E2E8F0 !important;
+}
+
+html[data-theme="titanium"] .border-\[\#D4AF37\]\/20,
+html[data-theme="titanium"] .border-\[\#D4AF37\]\/25,
+html[data-theme="titanium"] .border-\[\#D4AF37\]\/30,
+html[data-theme="titanium"] .border-\[\#D4AF37\]\/40,
+html[data-theme="titanium"] .border-\[\#D4AF37\] {
+  border-color: rgba(148, 163, 184, 0.22) !important;
+}
+
+html[data-theme="titanium"] .bg-\[\#D4AF37\]\/15,
+html[data-theme="titanium"] .bg-\[\#D4AF37\]\/20,
+html[data-theme="titanium"] .bg-\[\#D4AF37\]\/30 {
+  background-color: rgba(148, 163, 184, 0.12) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+}
+
+html[data-theme="titanium"] input[type="range"].gold-slider::-webkit-slider-thumb,
+html[data-theme="titanium"] input[type="range"].gold-slider::-moz-range-thumb {
+  background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 40%, #CBD5E1 70%, #94A3B8 100%) !important;
+  box-shadow: 0 0 10px rgba(148, 163, 184, 0.5) !important;
+}
+
+html[data-theme="titanium"] #hostlyNavGold stop:nth-child(1) { stop-color: #F8FAFC; }
+html[data-theme="titanium"] #hostlyNavGold stop:nth-child(2) { stop-color: #E2E8F0; }
+html[data-theme="titanium"] #hostlyNavGold stop:nth-child(3) { stop-color: #CBD5E1; }
+html[data-theme="titanium"] #hostlyNavGold stop:nth-child(4) { stop-color: #94A3B8; }
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "Hostly",
+  "description": "Premier Luxury Short-Term Rental Co-Hosting, Virtual Operations & White-Glove Property Management Platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
