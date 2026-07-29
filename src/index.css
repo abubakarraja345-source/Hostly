@@ -163,6 +163,21 @@
   animation: float 5s ease-in-out infinite;
 }
 
+@keyframes pmsMarquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-pms-marquee {
+  display: flex;
+  width: max-content;
+  animation: pmsMarquee 45s linear infinite;
+}
+
+.animate-pms-marquee:hover {
+  animation-play-state: paused;
+}
+
 /* Smooth Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

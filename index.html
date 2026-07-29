@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hostly • Luxury STR Co-Hosting, Maintenance & Direct Booking Systems</title>
     <meta name="description" content="Maximize rental revenue with 24/7 Virtual Ops, Property Maintenance Management, and a FREE Direct Booking Website to bypass Airbnb fees." />
-    
+    <link rel="icon" type="image/png" href="/hostly.png" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,15 +58,10 @@
           <a href="#faq" class="hover:text-[#F3E096] transition-colors">FAQ</a>
         </nav>
 
-        <!-- Header Theme Switcher & CTA Button -->
-        <div class="hidden md:flex items-center gap-4">
-          <!-- Single Button Theme Switcher -->
-          <button data-theme-toggle title="Toggle Light / Dark Theme" class="theme-switcher-container flex items-center gap-2 px-3.5 py-1.5 rounded-full shadow-inner hover:border-[#D4AF37]/60 transition-all cursor-pointer group">
-            <span class="theme-toggle-icon text-sm">🌌</span>
-            <span class="theme-toggle-label text-[11px] font-bold font-mono-num text-slate-200 group-hover:text-white transition-colors">Slate</span>
-            <span class="w-8 h-4 bg-slate-800 rounded-full relative inline-flex items-center px-0.5 border border-slate-600 transition-colors theme-switch-track ml-0.5">
-              <span class="w-3 h-3 bg-[#D4AF37] rounded-full transition-transform transform translate-x-0 theme-switch-thumb"></span>
-            </span>
+        <!-- Header Small Emoji Theme Switcher & CTA Button -->
+        <div class="hidden md:flex items-center gap-3">
+          <button data-theme-toggle title="Toggle Light / Dark Theme" aria-label="Toggle Theme" class="theme-switcher-container flex items-center justify-center w-8 h-8 rounded-full bg-[#0A142A] border border-slate-700/80 hover:border-[#D4AF37] transition-all cursor-pointer group shadow-md hover:scale-110 active:scale-95 text-sm">
+            <span class="theme-toggle-icon transition-transform duration-300 group-hover:rotate-12">🌌</span>
           </button>
 
           <a href="#start-with-us" class="gold-btn px-6 py-2.5 rounded-lg text-xs tracking-wider uppercase font-bold">
@@ -89,14 +84,10 @@
         <a href="#portfolio" class="block text-sm font-semibold text-[#F3E096] hover:text-[#D4AF37]">Portfolio (200+ Listings)</a>
         <a href="#revenue-calculator" class="block text-sm font-semibold text-slate-200 hover:text-[#D4AF37]">Profit Calculator</a>
         <a href="#faq" class="block text-sm font-semibold text-slate-200 hover:text-[#D4AF37]">FAQ</a>
-        <div class="pt-2 border-t border-slate-800/80 flex items-center justify-center">
-          <button data-theme-toggle class="flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#0D1628] border border-slate-700 hover:border-[#D4AF37] transition-all shadow-md cursor-pointer group">
-            <span class="text-[11px] text-slate-400 font-bold uppercase mr-1 font-mono-num">Theme:</span>
-            <span class="theme-toggle-icon text-base">🌌</span>
-            <span class="theme-toggle-label text-xs font-bold font-mono-num text-slate-200 group-hover:text-white transition-colors">Slate Dark</span>
-            <span class="w-8 h-4 bg-slate-800 rounded-full relative inline-flex items-center px-0.5 border border-slate-600 transition-colors theme-switch-track">
-              <span class="w-3 h-3 bg-[#D4AF37] rounded-full transition-transform transform translate-x-0 theme-switch-thumb"></span>
-            </span>
+        <div class="pt-2 border-t border-slate-800/80 flex items-center justify-center gap-2">
+          <span class="text-[11px] text-slate-400 font-bold uppercase font-mono-num">Theme:</span>
+          <button data-theme-toggle title="Toggle Light / Dark Theme" aria-label="Toggle Theme" class="flex items-center justify-center w-8 h-8 rounded-full bg-[#0D1628] border border-slate-700 hover:border-[#D4AF37] transition-all shadow-md cursor-pointer group text-sm hover:scale-110 active:scale-95">
+            <span class="theme-toggle-icon transition-transform duration-300 group-hover:rotate-12">🌌</span>
           </button>
         </div>
         <div class="pt-2">
@@ -653,6 +644,386 @@
               </a>
             </div>
           </div>
+
+          <!-- Circular PMS Logo Badges Marquee Ticker (All 24+ PMS Supported) -->
+          <div class="mt-8 pt-8 border-t border-[#D4AF37]/30 space-y-4">
+            <div class="text-center">
+              <span class="text-xs font-bold uppercase tracking-widest text-[#F3E096] font-mono-num inline-flex items-center gap-2 px-4 py-1.5 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full shadow-lg">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                Direct 2-Way API Integrations • All 24+ PMS Platforms Supported
+              </span>
+              <p class="text-[11px] text-slate-300 mt-2">Connect your PMS in under 15 minutes with zero calendar interruption. Hover to pause marquee.</p>
+            </div>
+
+            <!-- Infinite Circular Marquee Container -->
+            <div class="relative overflow-hidden group py-3">
+              <!-- Left & Right Fade Gradients -->
+              <div class="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#070E20] to-transparent z-10 pointer-events-none"></div>
+              <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#070E20] to-transparent z-10 pointer-events-none"></div>
+
+              <div class="animate-pms-marquee flex items-center gap-4 sm:gap-5">
+                
+                <!-- Set 1 (All 24 PMS Badges) -->
+
+                <!-- 1. Guesty -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <div class="flex items-center justify-center gap-1 text-[#1A1F36]">
+                    <svg class="w-4 h-4 fill-none stroke-current stroke-[2.2]" viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.5z"/><path d="M9 21V12h6v9"/></svg>
+                  </div>
+                  <span class="text-xs font-black text-[#1A1F36] tracking-tight mt-0.5">Guesty</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter">Pro & Lite</span>
+                </div>
+
+                <!-- 2. Hostfully -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#4A148C] tracking-tight">Hostfully</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Guidebooks & PMS</span>
+                </div>
+
+                <!-- 3. Tokeet -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <div class="flex items-center gap-1">
+                    <div class="w-3.5 h-3.5 bg-[#00C853] rounded text-white font-bold text-[9px] flex items-center justify-center">T</div>
+                    <span class="text-xs font-black text-[#00C853] tracking-tight">Tokeet</span>
+                  </div>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Channel Manager</span>
+                </div>
+
+                <!-- 4. uplisting -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-extrabold text-[#374151] tracking-tight lowercase">uplisting</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Direct Connect</span>
+                </div>
+
+                <!-- 5. SMOOBU -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#0066FF] tracking-wider uppercase">SMOOBU</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Vacation Software</span>
+                </div>
+
+                <!-- 6. Hostaway -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs sm:text-sm font-serif italic font-extrabold text-[#FF5A5F] tracking-tight">Hostaway</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Preferred Partner</span>
+                </div>
+
+                <!-- 7. LODGIFY -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] sm:text-xs font-black text-[#1E293B] tracking-widest uppercase">LODGIFY</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Direct Booking</span>
+                </div>
+
+                <!-- 8. OwnerRez -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <div class="flex items-center text-xs font-extrabold">
+                    <span class="text-[#10B981]">Owner</span><span class="text-slate-700">Rez</span>
+                  </div>
+                  <span class="text-[7px] font-extrabold text-emerald-600 uppercase tracking-tighter mt-0.5">Vacation Software</span>
+                </div>
+
+                <!-- 9. rentals united -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] sm:text-xs font-black text-[#1E293B] tracking-tight">rentals united</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Channel Manager</span>
+                </div>
+
+                <!-- 10. supercontrol -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] font-bold text-[#10B981]">supercontrol</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Booking System</span>
+                </div>
+
+                <!-- 11. zeevou -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#4A148C]">zeevou</span>
+                  <span class="text-[7px] font-extrabold text-amber-600 uppercase tracking-tighter mt-0.5">BETA Direct PMS</span>
+                </div>
+
+                <!-- 12. resly -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs sm:text-sm font-black text-[#1E293B] tracking-tight">resly</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Property Tech</span>
+                </div>
+
+                <!-- 13. hospitable -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E293B]">hospitable</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Smart Automation</span>
+                </div>
+
+                <!-- 14. mr.alfred -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#0D9488]">mr<span class="text-[#06B6D4]">.</span>alfred</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">PMS Sync</span>
+                </div>
+
+                <!-- 15. eviivo -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-bold text-[#374151]">eviivo</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Booking Engine</span>
+                </div>
+
+                <!-- 16. newbook -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E3A8A]">newbook</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Hospitality PMS</span>
+                </div>
+
+                <!-- 17. iGMS -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E293B]">iGMS</span>
+                  <span class="text-[7px] font-extrabold text-amber-600 uppercase tracking-tighter mt-0.5">Formerly AirGMS</span>
+                </div>
+
+                <!-- 18. Hostify -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-extrabold text-[#2563EB]">Hostify</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">2-Way Sync</span>
+                </div>
+
+                <!-- 19. MEWS -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] font-black text-[#0F172A] tracking-[0.18em] uppercase">MEWS</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Enterprise PMS</span>
+                </div>
+
+                <!-- 20. jurny. -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#0F172A]">.jurny.</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">AI Powered PMS</span>
+                </div>
+
+                <!-- 21. beds24 -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#0284C7]">beds24</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Channel Manager</span>
+                </div>
+
+                <!-- 22. BOOM Real Estech -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E293B]">BOOM</span>
+                  <span class="text-[7px] font-extrabold text-teal-600 uppercase tracking-tighter mt-0.5">Real Estech</span>
+                </div>
+
+                <!-- 23. Guesty For Hosts -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] font-bold text-[#1E293B]">Guesty</span>
+                  <span class="text-[7px] font-black text-[#2563EB] uppercase tracking-tighter mt-0.5">For Hosts</span>
+                </div>
+
+                <!-- 24. RENTAL READY -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[9px] font-black text-[#1E293B] tracking-tight">RENTAL READY</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Operations PMS</span>
+                </div>
+
+                <!-- 25. Cloudbeds -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-extrabold text-[#0061FF]">Cloudbeds</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">PMS Sync</span>
+                </div>
+
+                <!-- 26. Bookipro -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E40AF]">Booki<span class="text-[#0284C7]">pro</span></span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Rental PMS</span>
+                </div>
+
+                <!-- 27. avantio -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#F97316]">avantio</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Channel Manager</span>
+                </div>
+
+                <!-- 28. STREAMLINE -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[9px] font-black text-[#0F172A] tracking-wider uppercase">STREAMLINE</span>
+                  <span class="text-[7px] font-extrabold text-orange-600 uppercase tracking-tighter mt-0.5">Vacation Software</span>
+                </div>
+
+
+                <!-- Set 2 (Duplicate for Seamless Infinite Animation) -->
+
+                <!-- 1. Guesty -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <div class="flex items-center justify-center gap-1 text-[#1A1F36]">
+                    <svg class="w-4 h-4 fill-none stroke-current stroke-[2.2]" viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.5z"/><path d="M9 21V12h6v9"/></svg>
+                  </div>
+                  <span class="text-xs font-black text-[#1A1F36] tracking-tight mt-0.5">Guesty</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter">Pro & Lite</span>
+                </div>
+
+                <!-- 2. Hostfully -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#4A148C] tracking-tight">Hostfully</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Guidebooks & PMS</span>
+                </div>
+
+                <!-- 3. Tokeet -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <div class="flex items-center gap-1">
+                    <div class="w-3.5 h-3.5 bg-[#00C853] rounded text-white font-bold text-[9px] flex items-center justify-center">T</div>
+                    <span class="text-xs font-black text-[#00C853] tracking-tight">Tokeet</span>
+                  </div>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Channel Manager</span>
+                </div>
+
+                <!-- 4. uplisting -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-extrabold text-[#374151] tracking-tight lowercase">uplisting</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Direct Connect</span>
+                </div>
+
+                <!-- 5. SMOOBU -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#0066FF] tracking-wider uppercase">SMOOBU</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Vacation Software</span>
+                </div>
+
+                <!-- 6. Hostaway -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs sm:text-sm font-serif italic font-extrabold text-[#FF5A5F] tracking-tight">Hostaway</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Preferred Partner</span>
+                </div>
+
+                <!-- 7. LODGIFY -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] sm:text-xs font-black text-[#1E293B] tracking-widest uppercase">LODGIFY</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Direct Booking</span>
+                </div>
+
+                <!-- 8. OwnerRez -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <div class="flex items-center text-xs font-extrabold">
+                    <span class="text-[#10B981]">Owner</span><span class="text-slate-700">Rez</span>
+                  </div>
+                  <span class="text-[7px] font-extrabold text-emerald-600 uppercase tracking-tighter mt-0.5">Vacation Software</span>
+                </div>
+
+                <!-- 9. rentals united -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] sm:text-xs font-black text-[#1E293B] tracking-tight">rentals united</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Channel Manager</span>
+                </div>
+
+                <!-- 10. supercontrol -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] font-bold text-[#10B981]">supercontrol</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Booking System</span>
+                </div>
+
+                <!-- 11. zeevou -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#4A148C]">zeevou</span>
+                  <span class="text-[7px] font-extrabold text-amber-600 uppercase tracking-tighter mt-0.5">BETA Direct PMS</span>
+                </div>
+
+                <!-- 12. resly -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs sm:text-sm font-black text-[#1E293B] tracking-tight">resly</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Property Tech</span>
+                </div>
+
+                <!-- 13. hospitable -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E293B]">hospitable</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Smart Automation</span>
+                </div>
+
+                <!-- 14. mr.alfred -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#0D9488]">mr<span class="text-[#06B6D4]">.</span>alfred</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">PMS Sync</span>
+                </div>
+
+                <!-- 15. eviivo -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-bold text-[#374151]">eviivo</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Booking Engine</span>
+                </div>
+
+                <!-- 16. newbook -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E3A8A]">newbook</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Hospitality PMS</span>
+                </div>
+
+                <!-- 17. iGMS -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E293B]">iGMS</span>
+                  <span class="text-[7px] font-extrabold text-amber-600 uppercase tracking-tighter mt-0.5">Formerly AirGMS</span>
+                </div>
+
+                <!-- 18. Hostify -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-extrabold text-[#2563EB]">Hostify</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">2-Way Sync</span>
+                </div>
+
+                <!-- 19. MEWS -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] font-black text-[#0F172A] tracking-[0.18em] uppercase">MEWS</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Enterprise PMS</span>
+                </div>
+
+                <!-- 20. jurny. -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#0F172A]">.jurny.</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">AI Powered PMS</span>
+                </div>
+
+                <!-- 21. beds24 -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#0284C7]">beds24</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Channel Manager</span>
+                </div>
+
+                <!-- 22. BOOM Real Estech -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E293B]">BOOM</span>
+                  <span class="text-[7px] font-extrabold text-teal-600 uppercase tracking-tighter mt-0.5">Real Estech</span>
+                </div>
+
+                <!-- 23. Guesty For Hosts -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[10px] font-bold text-[#1E293B]">Guesty</span>
+                  <span class="text-[7px] font-black text-[#2563EB] uppercase tracking-tighter mt-0.5">For Hosts</span>
+                </div>
+
+                <!-- 24. RENTAL READY -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[9px] font-black text-[#1E293B] tracking-tight">RENTAL READY</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Operations PMS</span>
+                </div>
+
+                <!-- 25. Cloudbeds -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-extrabold text-[#0061FF]">Cloudbeds</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">PMS Sync</span>
+                </div>
+
+                <!-- 26. Bookipro -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#1E40AF]">Booki<span class="text-[#0284C7]">pro</span></span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Rental PMS</span>
+                </div>
+
+                <!-- 27. avantio -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-xs font-black text-[#F97316]">avantio</span>
+                  <span class="text-[7px] font-extrabold text-slate-500 uppercase tracking-tighter mt-0.5">Channel Manager</span>
+                </div>
+
+                <!-- 28. STREAMLINE -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white border-4 border-slate-700/80 shadow-2xl flex flex-col items-center justify-center p-2 text-center shrink-0 hover:scale-110 hover:border-[#D4AF37] transition-all cursor-pointer">
+                  <span class="text-[9px] font-black text-[#0F172A] tracking-wider uppercase">STREAMLINE</span>
+                  <span class="text-[7px] font-extrabold text-orange-600 uppercase tracking-tighter mt-0.5">Vacation Software</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -677,48 +1048,65 @@
               From flagship villas like <strong class="text-white">Villa Vista</strong> and <strong class="text-white">Kazani Heights</strong> to specialized holiday homes, <strong class="text-[#F3E096]">we connect into your PMS</strong> and deploy our revenue engineering to outperform local market benchmarks.
             </p>
           </div>
-          
-          <div class="flex flex-wrap items-center gap-2 flex-shrink-0">
-            <button class="px-4 py-2 rounded-xl bg-[#D4AF37] text-[#060B18] text-xs font-bold uppercase tracking-wider shadow-lg">All 200+ Properties</button>
-            <button class="px-4 py-2 rounded-xl bg-[#0A142A] border border-slate-700 text-slate-300 hover:text-[#D4AF37] text-xs font-bold uppercase tracking-wider transition">Luxury Villas</button>
-            <button class="px-4 py-2 rounded-xl bg-[#0A142A] border border-slate-700 text-slate-300 hover:text-[#D4AF37] text-xs font-bold uppercase tracking-wider transition">Executive Penthouses</button>
-            <button class="px-4 py-2 rounded-xl bg-[#0A142A] border border-slate-700 text-slate-300 hover:text-[#D4AF37] text-xs font-bold uppercase tracking-wider transition">Holiday Homes</button>
-          </div>
         </div>
 
-        <!-- 8 Featured Properties Grid -->
+        <!-- Category Filter Tabs with Icons -->
+        <div class="flex flex-wrap items-center gap-2 border-b border-slate-800/80 pb-6">
+          <button class="px-4 py-2 rounded-xl bg-[#D4AF37] text-[#060B18] text-xs font-bold uppercase tracking-wider shadow-lg flex items-center gap-1.5">
+            <span>🏢</span> All 200+ Listings
+          </button>
+          <a href="#services" class="px-4 py-2 rounded-xl bg-[#0A142A] border border-[#D4AF37]/60 text-[#F3E096] hover:bg-[#D4AF37]/20 text-xs font-bold uppercase tracking-wider transition flex items-center gap-1.5 shadow-md">
+            <span>🔌</span> PMS Integrations (24+ Supported)
+          </a>
+          <button class="px-4 py-2 rounded-xl bg-[#0A142A] border border-slate-700 text-slate-300 hover:text-[#D4AF37] text-xs font-bold uppercase tracking-wider transition flex items-center gap-1.5">
+            <span>🏰</span> Luxury Villas
+          </button>
+          <button class="px-4 py-2 rounded-xl bg-[#0A142A] border border-slate-700 text-slate-300 hover:text-[#D4AF37] text-xs font-bold uppercase tracking-wider transition flex items-center gap-1.5">
+            <span>🏙️</span> Executive Penthouses
+          </button>
+          <button class="px-4 py-2 rounded-xl bg-[#0A142A] border border-slate-700 text-slate-300 hover:text-[#D4AF37] text-xs font-bold uppercase tracking-wider transition flex items-center gap-1.5">
+            <span>🏡</span> Holiday Homes
+          </button>
+        </div>
+
+        <!-- 8 Featured Properties Grid with Full Icons -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           
           <!-- Property 1: Villa Vista -->
           <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
             <div class="relative h-48 bg-[#060B18] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
-              <div class="w-full h-full bg-gradient-to-br from-[#11224E] via-[#0D1B3E] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
-                🏰
-              </div>
-              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
-                Flagship Villa
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10 pointer-events-none"></div>
+              <img src="/villa vista.jpg" alt="Villa Vista" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80';" />
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase flex items-center gap-1">
+                <span>🏰</span> Flagship Villa
               </div>
               <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
                 <span>🔌 PMS Sync</span>
               </div>
             </div>
-            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+            <div class="p-5 space-y-3 flex-1 flex flex-col justify-between bg-[#070E20]">
               <div>
                 <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
-                  <span>Beverly Hills / Malibu</span>
-                  <span class="text-amber-400 font-bold">★ 5.0 (142 Rev)</span>
+                  <span class="flex items-center gap-1">📍 Beverly Hills / Malibu</span>
+                  <span class="text-amber-400 font-bold flex items-center gap-0.5">⭐ 5.0 (142)</span>
                 </div>
-                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Villa Vista</h3>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                  <span>Villa Vista</span>
+                </h3>
                 <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">6-Bedroom Luxury Infinity Pool Estate with private cliffside panoramic ocean views.</p>
+                <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-[10px] font-medium text-slate-300">
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛏️ 6 Beds</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛁 5.5 Baths</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">👥 12 Guests</span>
+                </div>
               </div>
               <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">💵 Avg Daily Rate</div>
                   <div class="font-bold text-[#F3E096]">$850 / nt</div>
                 </div>
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">📈 Occupancy</div>
                   <div class="font-bold text-emerald-400">96% Avg</div>
                 </div>
               </div>
@@ -728,33 +1116,38 @@
           <!-- Property 2: Kazani Heights -->
           <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
             <div class="relative h-48 bg-[#060B18] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
-              <div class="w-full h-full bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
-                🏙️
-              </div>
-              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
-                Executive Penthouse
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10 pointer-events-none"></div>
+              <img src="/kazani heights.jpg" alt="Kazani Heights" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80';" />
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase flex items-center gap-1">
+                <span>🏙️</span> Executive Penthouse
               </div>
               <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
                 <span>🔌 PMS Sync</span>
               </div>
             </div>
-            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+            <div class="p-5 space-y-3 flex-1 flex flex-col justify-between bg-[#070E20]">
               <div>
                 <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
-                  <span>Downtown Skyline</span>
-                  <span class="text-amber-400 font-bold">★ 4.98 (98 Rev)</span>
+                  <span class="flex items-center gap-1">📍 Downtown Skyline</span>
+                  <span class="text-amber-400 font-bold flex items-center gap-0.5">⭐ 4.98 (98)</span>
                 </div>
-                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Kazani Heights</h3>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                  <span>Kazani Heights</span>
+                </h3>
                 <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">3-Bedroom High-Rise Skyline Penthouse with private rooftop terrace & concierge elevator.</p>
+                <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-[10px] font-medium text-slate-300">
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛏️ 3 Beds</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛁 3 Baths</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">👥 6 Guests</span>
+                </div>
               </div>
               <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">💵 Avg Daily Rate</div>
                   <div class="font-bold text-[#F3E096]">$420 / nt</div>
                 </div>
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">📈 Occupancy</div>
                   <div class="font-bold text-emerald-400">94% Avg</div>
                 </div>
               </div>
@@ -764,33 +1157,38 @@
           <!-- Property 3: Resid Elite -->
           <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
             <div class="relative h-48 bg-[#060B18] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
-              <div class="w-full h-full bg-gradient-to-br from-[#162E5A] via-[#0E1E3E] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
-                ✨
-              </div>
-              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
-                Urban Sanctuary
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10 pointer-events-none"></div>
+              <img src="/resid elite.jpg" alt="Resid Elite" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80';" />
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase flex items-center gap-1">
+                <span>✨</span> Urban Sanctuary
               </div>
               <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
                 <span>🔌 PMS Sync</span>
               </div>
             </div>
-            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+            <div class="p-5 space-y-3 flex-1 flex flex-col justify-between bg-[#070E20]">
               <div>
                 <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
-                  <span>Arts District Prime</span>
-                  <span class="text-amber-400 font-bold">★ 5.0 (215 Rev)</span>
+                  <span class="flex items-center gap-1">📍 Arts District Prime</span>
+                  <span class="text-amber-400 font-bold flex items-center gap-0.5">⭐ 5.0 (215)</span>
                 </div>
-                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Resid Elite</h3>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                  <span>Resid Elite</span>
+                </h3>
                 <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">2-Bedroom Architectural Loft engineered for corporate travelers and high-ticket weekend stays.</p>
+                <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-[10px] font-medium text-slate-300">
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛏️ 2 Beds</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛁 2 Baths</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">👥 4 Guests</span>
+                </div>
               </div>
               <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">💵 Avg Daily Rate</div>
                   <div class="font-bold text-[#F3E096]">$310 / nt</div>
                 </div>
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">📈 Occupancy</div>
                   <div class="font-bold text-emerald-400">98% Avg</div>
                 </div>
               </div>
@@ -800,177 +1198,202 @@
           <!-- Property 4: Cineplex Holiday Homes -->
           <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
             <div class="relative h-48 bg-[#060B18] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
-              <div class="w-full h-full bg-gradient-to-br from-[#311042] via-[#1C0D2C] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
-                🎬
-              </div>
-              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
-                Holiday Home
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10 pointer-events-none"></div>
+              <img src="/cineplex.jpg" alt="Cineplex Holiday Homes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80';" />
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase flex items-center gap-1">
+                <span>🎬</span> Holiday Home
               </div>
               <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
                 <span>🔌 PMS Sync</span>
               </div>
             </div>
-            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+            <div class="p-5 space-y-3 flex-1 flex flex-col justify-between bg-[#070E20]">
               <div>
                 <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
-                  <span>West Hollywood / Metro</span>
-                  <span class="text-amber-400 font-bold">★ 4.97 (178 Rev)</span>
+                  <span class="flex items-center gap-1">📍 West Hollywood</span>
+                  <span class="text-amber-400 font-bold flex items-center gap-0.5">⭐ 4.97 (178)</span>
                 </div>
-                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Cineplex Holiday Homes</h3>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                  <span>Cineplex Holiday Homes</span>
+                </h3>
                 <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">4-Bedroom Luxury Holiday Home equipped with private Dolby Atmos cinema screening room & heated spa.</p>
+                <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-[10px] font-medium text-slate-300">
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛏️ 4 Beds</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛁 4.5 Baths</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">👥 8 Guests</span>
+                </div>
               </div>
               <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">💵 Avg Daily Rate</div>
                   <div class="font-bold text-[#F3E096]">$550 / nt</div>
                 </div>
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">📈 Occupancy</div>
                   <div class="font-bold text-emerald-400">92% Avg</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Property 5: Azure Horizon Penthouse (Added Holiday Home 1) -->
+          <!-- Property 5: Azure Horizon Penthouse -->
           <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
             <div class="relative h-48 bg-[#060B18] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
-              <div class="w-full h-full bg-gradient-to-br from-[#0C356A] via-[#091F40] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
-                🌊
-              </div>
-              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
-                Waterfront Holiday Home
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10 pointer-events-none"></div>
+              <img src="/azure.jpg" alt="Azure Horizon Penthouse" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80';" />
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase flex items-center gap-1">
+                <span>🌊</span> Waterfront Holiday Home
               </div>
               <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
                 <span>🔌 PMS Sync</span>
               </div>
             </div>
-            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+            <div class="p-5 space-y-3 flex-1 flex flex-col justify-between bg-[#070E20]">
               <div>
                 <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
-                  <span>Coastal Cove / Miami</span>
-                  <span class="text-amber-400 font-bold">★ 4.99 (110 Rev)</span>
+                  <span class="flex items-center gap-1">📍 Coastal Cove / Miami</span>
+                  <span class="text-amber-400 font-bold flex items-center gap-0.5">⭐ 4.99 (110)</span>
                 </div>
-                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Azure Horizon Penthouse</h3>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                  <span>Azure Horizon</span>
+                </h3>
                 <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">5-Bedroom Glass Front Holiday Residence featuring private yacht dockage & panoramic sunset views.</p>
+                <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-[10px] font-medium text-slate-300">
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛏️ 5 Beds</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛁 5 Baths</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">👥 10 Guests</span>
+                </div>
               </div>
               <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">💵 Avg Daily Rate</div>
                   <div class="font-bold text-[#F3E096]">$680 / nt</div>
                 </div>
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">📈 Occupancy</div>
                   <div class="font-bold text-emerald-400">95% Avg</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Property 6: Palm Grove Sanctuary (Added Holiday Home 2) -->
+          <!-- Property 6: Palm Grove Sanctuary -->
           <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
             <div class="relative h-48 bg-[#060B18] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
-              <div class="w-full h-full bg-gradient-to-br from-[#0B3B24] via-[#062013] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
-                🌴
-              </div>
-              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
-                Garden Holiday Villa
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10 pointer-events-none"></div>
+              <img src="/palm.jpg" alt="Palm Grove Sanctuary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80';" />
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase flex items-center gap-1">
+                <span>🌴</span> Garden Holiday Villa
               </div>
               <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
                 <span>🔌 PMS Sync</span>
               </div>
             </div>
-            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+            <div class="p-5 space-y-3 flex-1 flex flex-col justify-between bg-[#070E20]">
               <div>
                 <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
-                  <span>Scottsdale / Palm Springs</span>
-                  <span class="text-amber-400 font-bold">★ 5.0 (88 Rev)</span>
+                  <span class="flex items-center gap-1">📍 Palm Springs</span>
+                  <span class="text-amber-400 font-bold flex items-center gap-0.5">⭐ 5.0 (88)</span>
                 </div>
-                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Palm Grove Sanctuary</h3>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                  <span>Palm Grove Sanctuary</span>
+                </h3>
                 <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">5-Bedroom Tropical Holiday Oasis with outdoor chef kitchen, fire pits & putting greens.</p>
+                <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-[10px] font-medium text-slate-300">
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛏️ 5 Beds</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛁 4 Baths</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">👥 10 Guests</span>
+                </div>
               </div>
               <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">💵 Avg Daily Rate</div>
                   <div class="font-bold text-[#F3E096]">$750 / nt</div>
                 </div>
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">📈 Occupancy</div>
                   <div class="font-bold text-emerald-400">91% Avg</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Property 7: Serenity Alpine Chalet (Added Holiday Home 3) -->
+          <!-- Property 7: Serenity Alpine Chalet -->
           <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
             <div class="relative h-48 bg-[#060B18] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
-              <div class="w-full h-full bg-gradient-to-br from-[#1A365D] via-[#0F1E36] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
-                🏔️
-              </div>
-              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
-                Alpine Holiday Lodge
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10 pointer-events-none"></div>
+              <img src="/alpine.jpg" alt="Serenity Alpine Chalet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80';" />
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase flex items-center gap-1">
+                <span>🏔️</span> Alpine Holiday Lodge
               </div>
               <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
                 <span>🔌 PMS Sync</span>
               </div>
             </div>
-            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+            <div class="p-5 space-y-3 flex-1 flex flex-col justify-between bg-[#070E20]">
               <div>
                 <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
-                  <span>Aspen / Tahoe / Vail</span>
-                  <span class="text-amber-400 font-bold">★ 4.96 (164 Rev)</span>
+                  <span class="flex items-center gap-1">📍 Aspen / Tahoe</span>
+                  <span class="text-amber-400 font-bold flex items-center gap-0.5">⭐ 4.96 (164)</span>
                 </div>
-                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Serenity Alpine Chalet</h3>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                  <span>Serenity Alpine</span>
+                </h3>
                 <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">6-Bedroom Ski-in/Ski-out Holiday Home featuring cedar saunas and heated stone Jacuzzi decks.</p>
+                <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-[10px] font-medium text-slate-300">
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛏️ 6 Beds</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛁 6 Baths</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">👥 14 Guests</span>
+                </div>
               </div>
               <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">💵 Avg Daily Rate</div>
                   <div class="font-bold text-[#F3E096]">$920 / nt</div>
                 </div>
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">📈 Occupancy</div>
                   <div class="font-bold text-emerald-400">97% Avg</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Property 8: Skyline Loft 402 (Added Holiday Home 4) -->
+          <!-- Property 8: Skyline Loft 402 -->
           <div class="gold-card rounded-2xl overflow-hidden flex flex-col justify-between group border-[#D4AF37]/50 shadow-xl">
             <div class="relative h-48 bg-[#060B18] overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10"></div>
-              <div class="w-full h-full bg-gradient-to-br from-[#2E1065] via-[#170833] to-[#0A142A] flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-500">
-                🎨
-              </div>
-              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase font-mono-num">
-                Designer Holiday Loft
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070E20] via-transparent to-transparent z-10 pointer-events-none"></div>
+              <img src="/skyline.jpg" alt="Skyline Loft 402" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80';" />
+              <div class="absolute top-3 left-3 z-20 px-2.5 py-1 bg-[#060B18]/90 border border-[#D4AF37]/40 rounded-full text-[10px] font-bold text-[#F3E096] uppercase flex items-center gap-1">
+                <span>🎨</span> Designer Loft
               </div>
               <div class="absolute top-3 right-3 z-20 px-2 py-1 bg-emerald-950/90 border border-emerald-500/40 rounded-full text-[10px] font-bold text-emerald-300 uppercase flex items-center gap-1">
                 <span>🔌 PMS Sync</span>
               </div>
             </div>
-            <div class="p-5 space-y-4 flex-1 flex flex-col justify-between bg-[#070E20]">
+            <div class="p-5 space-y-3 flex-1 flex flex-col justify-between bg-[#070E20]">
               <div>
                 <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
-                  <span>SoHo / Tribeca / Austin</span>
-                  <span class="text-amber-400 font-bold">★ 5.0 (132 Rev)</span>
+                  <span class="flex items-center gap-1">📍 SoHo / Tribeca</span>
+                  <span class="text-amber-400 font-bold flex items-center gap-0.5">⭐ 5.0 (132)</span>
                 </div>
-                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">Skyline Loft 402</h3>
+                <h3 class="text-lg font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                  <span>Skyline Loft 402</span>
+                </h3>
                 <p class="text-[11px] text-slate-300 mt-1 line-clamp-2">2-Bedroom Industrial Designer Duplex engineered for luxury city holiday getaways and executive retreats.</p>
+                <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-[10px] font-medium text-slate-300">
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛏️ 2 Beds</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">🛁 2 Baths</span>
+                  <span class="px-2 py-0.5 bg-[#0A142A] border border-slate-800 rounded flex items-center gap-1">👥 4 Guests</span>
+                </div>
               </div>
               <div class="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2 text-xs font-mono-num">
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Avg Daily Rate</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">💵 Avg Daily Rate</div>
                   <div class="font-bold text-[#F3E096]">$340 / nt</div>
                 </div>
                 <div class="bg-[#0A142A] p-2 rounded border border-slate-800">
-                  <div class="text-[10px] text-slate-400">Occupancy</div>
+                  <div class="text-[10px] text-slate-400 flex items-center gap-1">📈 Occupancy</div>
                   <div class="font-bold text-emerald-400">96% Avg</div>
                 </div>
               </div>
@@ -1496,13 +1919,8 @@
         <div class="border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
           <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4">
             <p>© 2026 Hostly Inc. All rights reserved.</p>
-            <button data-theme-toggle class="flex items-center gap-2 bg-[#0A142A]/80 hover:bg-[#0D1628] px-3 py-1 rounded-full border border-slate-800 hover:border-slate-700 transition cursor-pointer group">
-              <span class="text-[10px] text-slate-400 font-bold uppercase font-mono-num">Theme:</span>
-              <span class="theme-toggle-icon text-xs">🌌</span>
-              <span class="theme-toggle-label text-[10px] font-bold font-mono-num text-slate-300 group-hover:text-white transition-colors">Slate Dark</span>
-              <span class="w-7 h-3.5 bg-slate-800 rounded-full relative inline-flex items-center px-0.5 border border-slate-600 transition-colors theme-switch-track ml-0.5">
-                <span class="w-2.5 h-2.5 bg-[#D4AF37] rounded-full transition-transform transform translate-x-0 theme-switch-thumb"></span>
-              </span>
+            <button data-theme-toggle title="Toggle Light / Dark Theme" aria-label="Toggle Theme" class="flex items-center justify-center w-7 h-7 rounded-full bg-[#0A142A] border border-slate-800 hover:border-[#D4AF37] transition-all cursor-pointer group text-xs hover:scale-110 active:scale-95 shadow-sm">
+              <span class="theme-toggle-icon transition-transform duration-300 group-hover:rotate-12">🌌</span>
             </button>
           </div>
           <p>Designed for Short-Term Rental Property Owners & Operators.</p>
